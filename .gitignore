@@ -1,14 +1,5 @@
-
+.DS_Store
 .ipynb_checkpoints/*
-
-Technical Neural Networks Class/.ipynb_checkpoints/Perzeptron-checkpoint.ipynb
-
-Technical Neural Networks Class/.ipynb_checkpoints/Regional and Online Learnable Fields-checkpoint.ipynb
-
-Technical Neural Networks Class/.ipynb_checkpoints/Radial Basis Function-checkpoint.ipynb
-
-Technical Neural Networks Class/.ipynb_checkpoints/Regional and Online Learnable Fields-checkpoint.ipynb
-
 data/*
-
 Untitled.ipynb
+Untitled*.ipynb
