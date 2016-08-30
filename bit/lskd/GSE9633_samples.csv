@@ -1,0 +1,17 @@
+sample,name,class
+GSM243480,prostatic cell line PC3,sensitive
+GSM243481,prostatic cell line DU145,sensitive
+GSM243482,prostatic cell line LNCaP,sensitive
+GSM243483,prostatic cell line 22Rv,resistant
+GSM243484,prostatic cell line WPMY1,resistant
+GSM243485,prostatic cell line VCaP,resistant
+GSM243486,prostatic cell line MDAPCa2b,resistant
+GSM243487,prostatic cell line HPV7,sensitive
+GSM243488,prostatic cell line HPV10,sensitive
+GSM243489,prostatic cell line RWPE1,sensitive
+GSM243490,prostatic cell line RWPE2,sensitive
+GSM243491,prostatic cell line NB11,sensitive
+GSM243492,prostatic cell line W99,sensitive
+GSM243493,prostatic cell line PWR1E,sensitive
+GSM243494,prostatic cell line DUCaP,resistant
+GSM243495,prostatic cell line NB26,sensitive
