@@ -1,0 +1,239 @@
+SET DOCUMENT Name = "CTH BEL Lab"
+SET DOCUMENT Version = "1.0"    
+SET DOCUMENT Description = ""
+SET DOCUMENT Copyright = ""
+SET DOCUMENT Authors = "Charles Tapley Hoyt"
+SET DOCUMENT Licenses = "Copyright (c) 2016 Charles Tapley Hoyt"
+SET DOCUMENT ContactInfo = "cthoyt@gmail.com"
+
+# NAMESPACE URLS
+
+DEFINE NAMESPACE ADO AS URL "http://belief.scai.fraunhofer.de/openbel/repository/namespaces/ADO.belns"
+DEFINE NAMESPACE AFFX AS URL "http://resource.belframework.org/belframework/20150611/namespace/affy-probeset-ids.belns"
+DEFINE NAMESPACE BRCO AS URL "http://belief.scai.fraunhofer.de/openbel/repository/namespaces/BRCO.belns"
+DEFINE NAMESPACE CHEBI AS URL "http://resource.belframework.org/belframework/20150611/namespace/chebi.belns"
+DEFINE NAMESPACE CHEBIID AS URL "http://resource.belframework.org/belframework/20150611/namespace/chebi-ids.belns"
+DEFINE NAMESPACE CHEMBL AS URL "http://belief-demo.scai.fraunhofer.de/openbel/repository/namespaces/chembl-names.belns"
+DEFINE NAMESPACE CHEMBLID AS URL "http://belief-demo.scai.fraunhofer.de/openbel/repository/namespaces/chembl-ids.belns"
+DEFINE NAMESPACE CTO AS URL "http://belief.scai.fraunhofer.de/openbel/repository/namespaces/CTO.belns"
+DEFINE NAMESPACE DO AS URL "http://resource.belframework.org/belframework/20150611/namespace/disease-ontology.belns"
+DEFINE NAMESPACE DOID AS URL "http://resource.belframework.org/belframework/20150611/namespace/disease-ontology-ids.belns"
+DEFINE NAMESPACE EGID AS URL "http://resource.belframework.org/belframework/20150611/namespace/entrez-gene-ids.belns"
+DEFINE NAMESPACE FlyBase AS URL "http://belief.scai.fraunhofer.de/openbel/repository/namespaces/Dmel.belns"
+DEFINE NAMESPACE GOBP AS URL "http://resource.belframework.org/belframework/20150611/namespace/go-biological-process.belns"
+DEFINE NAMESPACE GOBPID AS URL "http://resource.belframework.org/belframework/20150611/namespace/go-biological-process-ids.belns"
+DEFINE NAMESPACE GOCC AS URL "http://resource.belframework.org/belframework/20150611/namespace/go-cellular-component.belns"
+DEFINE NAMESPACE GOCCID AS URL "http://resource.belframework.org/belframework/20150611/namespace/go-cellular-component-ids.belns"
+DEFINE NAMESPACE HGNC AS URL "http://resource.belframework.org/belframework/20150611/namespace/hgnc-human-genes.belns"
+DEFINE NAMESPACE LMSD AS URL "http://belief-demo.scai.fraunhofer.de/openbel/repository/namespaces/LMSD.belns"
+DEFINE NAMESPACE MESHC AS URL "http://resource.belframework.org/belframework/20150611/namespace/mesh-chemicals.belns"
+DEFINE NAMESPACE MESHCID AS URL "http://resource.belframework.org/belframework/20150611/namespace/mesh-chemicals-ids.belns"
+DEFINE NAMESPACE MESHCS AS URL "http://resource.belframework.org/belframework/20150611/namespace/mesh-cellular-structures.belns"
+DEFINE NAMESPACE MESHCSID AS URL "http://resource.belframework.org/belframework/20150611/namespace/mesh-cellular-structures-ids.belns"
+DEFINE NAMESPACE MESHD AS URL "http://resource.belframework.org/belframework/20150611/namespace/mesh-diseases.belns"
+DEFINE NAMESPACE MESHDID AS URL "http://resource.belframework.org/belframework/20150611/namespace/mesh-diseases-ids.belns"
+DEFINE NAMESPACE MESHPP AS URL "http://resource.belframework.org/belframework/20150611/namespace/mesh-processes.belns"
+DEFINE NAMESPACE MESHPPID AS URL "http://resource.belframework.org/belframework/20150611/namespace/mesh-processes-ids.belns"
+DEFINE NAMESPACE MGI AS URL "http://resource.belframework.org/belframework/20150611/namespace/mgi-mouse-genes.belns"
+DEFINE NAMESPACE NIFT AS URL "http://belief.scai.fraunhofer.de/openbel/repository/namespaces/NIFT.belns"
+DEFINE NAMESPACE NTN AS URL "http://belief.scai.fraunhofer.de/openbel/repository/namespaces/Nutrition.belns"
+DEFINE NAMESPACE PDO AS URL "http://belief.scai.fraunhofer.de/openbel/repository/namespaces/PDO.belns"
+DEFINE NAMESPACE PH AS URL "http://belief-demo.scai.fraunhofer.de/openbel/repository/namespaces/Placeholder.belns"
+DEFINE NAMESPACE PMIBP AS URL "http://belief-demo.scai.fraunhofer.de/BeliefDashboard/dicten/namespaces/pmibp.belns"
+DEFINE NAMESPACE PMICHEM AS URL "http://belief-demo.scai.fraunhofer.de/BeliefDashboard/dicten/namespaces/pmichem.belns"
+DEFINE NAMESPACE PMICOMP AS URL "http://belief-demo.scai.fraunhofer.de/BeliefDashboard/dicten/namespaces/pmicomp.belns"
+DEFINE NAMESPACE PMIDIS AS URL "http://belief-demo.scai.fraunhofer.de/BeliefDashboard/dicten/namespaces/pmidis.belns"
+DEFINE NAMESPACE PMIPFAM AS URL "http://belief-demo.scai.fraunhofer.de/BeliefDashboard/dicten/namespaces/pmipfam.belns"
+DEFINE NAMESPACE PTS AS URL "http://belief.scai.fraunhofer.de/openbel/repository/namespaces/PTS.belns"
+DEFINE NAMESPACE RGD AS URL "http://resource.belframework.org/belframework/20150611/namespace/rgd-rat-genes.belns"
+DEFINE NAMESPACE SCHEM AS URL "http://resource.belframework.org/belframework/20150611/namespace/selventa-legacy-chemicals.belns"
+DEFINE NAMESPACE SCOMP AS URL "http://resource.belframework.org/belframework/20150611/namespace/selventa-named-complexes.belns"
+DEFINE NAMESPACE SDIS AS URL "http://resource.belframework.org/belframework/20150611/namespace/selventa-legacy-diseases.belns"
+DEFINE NAMESPACE SFAM AS URL "http://resource.belframework.org/belframework/20150611/namespace/selventa-protein-families.belns"
+DEFINE NAMESPACE SP AS URL "http://resource.belframework.org/belframework/20150611/namespace/swissprot.belns"
+DEFINE NAMESPACE SPID AS URL "http://resource.belframework.org/belframework/20150611/namespace/swissprot-ids.belns"
+DEFINE NAMESPACE dbSNP AS URL "http://belief.scai.fraunhofer.de/openbel/repository/namespaces/SNP.belns"
+
+
+# ANNOTATION URLS
+
+DEFINE ANNOTATION Anatomy AS URL "http://resource.belframework.org/belframework/20131211/annotation/anatomy.belanno"
+DEFINE ANNOTATION BodyRegion AS URL "http://resource.belframework.org/belframework/1.0/annotation/mesh-body-region.belanno"
+DEFINE ANNOTATION CardiovascularSystem AS URL "http://resource.belframework.org/belframework/1.0/annotation/mesh-cardiovascular-system.belanno"
+DEFINE ANNOTATION Cell AS URL "http://resource.belframework.org/belframework/20131211/annotation/cell.belanno"
+DEFINE ANNOTATION CellLine AS URL "http://resource.belframework.org/belframework/20131211/annotation/cell-line.belanno"
+DEFINE ANNOTATION CellStructure AS URL "http://resource.belframework.org/belframework/20131211/annotation/cell-structure.belanno"
+DEFINE ANNOTATION DigestiveSystem AS URL "http://resource.belframework.org/belframework/1.0/annotation/mesh-digestive-system.belanno"
+DEFINE ANNOTATION Disease AS URL "http://resource.belframework.org/belframework/20131211/annotation/disease.belanno"
+DEFINE ANNOTATION FluidAndSecretion AS URL "http://resource.belframework.org/belframework/1.0/annotation/mesh-fluid-and-secretion.belanno"
+DEFINE ANNOTATION HemicAndImmuneSystem AS URL "http://resource.belframework.org/belframework/1.0/annotation/mesh-hemic-and-immune-system.belanno"
+DEFINE ANNOTATION IntegumentarySystem AS URL "http://resource.belframework.org/belframework/1.0/annotation/mesh-integumentary-system.belanno"
+DEFINE ANNOTATION MeSHAnatomy AS URL "http://resource.belframework.org/belframework/20131211/annotation/mesh-anatomy.belanno"
+DEFINE ANNOTATION MeSHDisease AS URL "http://resource.belframework.org/belframework/20131211/annotation/mesh-diseases.belanno"
+DEFINE ANNOTATION NervousSystem AS URL "http://resource.belframework.org/belframework/1.0/annotation/mesh-nervous-system.belanno"
+DEFINE ANNOTATION RespiratorySystem AS URL "http://resource.belframework.org/belframework/1.0/annotation/mesh-respiratory-system.belanno"
+DEFINE ANNOTATION Species AS URL "http://resource.belframework.org/belframework/20131211/annotation/species-taxonomy-id.belanno"
+DEFINE ANNOTATION Tissue AS URL "http://resource.belframework.org/belframework/1.0/annotation/mesh-tissue.belanno"
+DEFINE ANNOTATION UrogenitalSystem AS URL "http://resource.belframework.org/belframework/1.0/annotation/mesh-urogenital-system.belanno"
+
+
+SET STATEMENT_GROUP = "Group 1" 
+
+SET Citation = {"PubMed","Protein aggregation and neurodegeneration in prototypical neurodegenerative diseases: Examples of amyloidopathies, tauopathies and synucleinopathies.","26209472"} 
+
+SET Evidence = "Alzheimer's and Parkinson's diseases are the most prevalent neurodegenerative diseases that generate important health-related direct and indirect socio-economic costs. They are characterized by severe neuronal losses in several disease-specific brain regions associated with deposits of aggregated proteins. In Alzheimer's disease, beta-amyloid peptide-containing plaques and intraneuronal neurofibrillary tangles composed of hyperphosphorylated microtubule-associated protein tau are the two main neuropathological lesions, while Parkinson's disease is defined by the presence of Lewy Bodies that are intraneuronal proteinaceous cytoplasmic inclusions. alpha-Synuclein has been identified as a major protein component of Lewy Bodies and heavily implicated in the pathogenesis of Parkinson's disease. In the past few years, evidence has emerged to explain how these aggregate-prone proteins can undergo spontaneous self-aggregation, propagate from cell to cell, and mediate neurotoxicity. Current research now indicates that oligomeric forms are probably the toxic species. This article discusses recent progress in the understanding of the pathogenesis of these diseases, with a focus on the underlying mechanisms of protein aggregation, and emphasizes the pathophysiological molecular mechanisms leading to cellular toxicity. Finally, we present the putative direct link between beta-amyloid peptide and tau in causing toxicity in Alzheimer's disease as well as alpha-synuclein in Parkinson's disease, along with some of the most promising therapeutic strategies currently in development for those incurable neurodegenerative disorders." 
+
+
+
+UNSET STATEMENT_GROUP 
+
+SET STATEMENT_GROUP = "Group 2" 
+
+SET Citation = {"PubMed","Exocytosis and Spreading of Normal and Aberrant alpha-Synuclein.","26940375"} 
+
+SET Evidence = "It is now established that alpha-synuclein can be physiologically secreted to the extracellular space. In this sense, mechanisms that govern the secretion of the protein may be of importance in the initiation and progress of synucleinopathies. It is possible that increased secretion may aid the formation of toxic seeds extracellularly. Alternatively, reduced presence of extracellular alpha-synuclein due to impaired secretion may increase the intracellular load and trigger intracellular seeding. Once outside, alpha-synuclein can exert various paracrine actions on neighboring cells again by mechanisms that have not been fully elucidated. It has been demonstrated that, when applied extracellularly, alpha-synuclein species can induce multiple neurotoxic and inflammatory responses, and aid the transmission of pathology between neurons. Still, the exact mechanism(s) by which secreted alpha-synuclein affects the homeostasis of other neurons is still not well understood. A portion of alpha-synuclein has been shown to be associated with the surface and lumen of exosomes which can transfer it to the surrounding cells, and potentially trigger seeding. Interestingly, increased exosome release has been linked to pathological situations of lysosomal dysfunction as observed in Parkinson's disease (PD). However, the possibility that the observed alpha-synuclein pathology spread is attributable to the passive diffusion of the initial injected alpha-synuclein strains cannot be excluded. Importantly, most of the studies that have so far addressed the role of extracellular alpha-synuclein have not employed naturally secreted forms of the protein. It is plausible that deregulation in the normal processing of secreted alpha-synuclein may aid the formation of "toxic" species and as such it may also be a causative risk factor for PD. In this capacity, elucidation of the underlying mechanisms that regulate the protein-levels of extracellular alpha-synuclein becomes essential. Such mechanisms could involve its proteolytic clearance from the extracellular milieu." 
+
+
+
+UNSET STATEMENT_GROUP 
+
+SET STATEMENT_GROUP = "Group 3" 
+
+SET Citation = {"PubMed","Induction of de novo alpha-synuclein fibrillization in a neuronal model for Parkinson's disease.","26839406"} 
+
+SET Evidence = "Lewy bodies (LBs) are intraneuronal inclusions consisting primarily of fibrillized human alpha-synuclein (halpha-Syn) protein, which represent the major pathological hallmark of Parkinson's disease (PD). Although doubling halpha-Syn expression provokes LB pathology in humans, halpha-Syn overexpression does not trigger the formation of fibrillar LB-like inclusions in mice. We hypothesized that interactions between exogenous halpha-Syn and endogenous mouse synuclein homologs could be attenuating halpha-Syn fibrillization in mice, and therefore, we systematically assessed halpha-Syn aggregation propensity in neurons derived from alpha-Syn-KO, beta-Syn-KO, gamma-Syn-KO, and triple-KO mice lacking expression of all three synuclein homologs. Herein, we show that halpha-Syn forms hyperphosphorylated (at S129) and ubiquitin-positive LB-like inclusions in primary neurons of alpha-Syn-KO, beta-Syn-KO, and triple-KO mice, as well as in transgenic alpha-Syn-KO mouse brains in vivo. Importantly, correlative light and electron microscopy, immunogold labeling, and thioflavin-S binding established their fibrillar ultrastructure, and fluorescence recovery after photobleaching/photoconversion experiments showed that these inclusions grow in size and incorporate soluble proteins. We further investigated whether the presence of homologous alpha-Syn species would interfere with the seeding and spreading of alpha-Syn pathology. Our results are in line with increasing evidence demonstrating that the spreading of alpha-Syn pathology is most prominent when the injected preformed fibrils and host-expressed alpha-Syn monomers are from the same species. These findings provide insights that will help advance the development of neuronal and in vivo models for understanding mechanisms underlying halpha-Syn intraneuronal fibrillization and its contribution to PD pathogenesis, and for screening pharmacologic and genetic modulators of alpha-Syn fibrillization in neurons." 
+
+
+
+UNSET STATEMENT_GROUP 
+
+SET STATEMENT_GROUP = "Group 4" 
+
+SET Citation = {"PubMed","Prion-like propagation of human brain-derived alpha-synuclein in transgenic mice expressing human wild-type alpha-synuclein.","26612754"} 
+
+SET Evidence = "INTRODUCTION: Parkinson's disease (PD) and multiple system atrophy (MSA) are neurodegenerative diseases that are characterized by the intracellular accumulation of alpha-synuclein containing aggregates. Recent increasing evidence suggests that Parkinson's disease and MSA pathology spread throughout the nervous system in a spatiotemporal fashion, possibly by prion-like propagation of alpha-synuclein positive aggregates between synaptically connected areas. Concurrently, intracerebral injection of pathological alpha-synuclein into transgenic mice overexpressing human wild-type alpha-synuclein, or human alpha-synuclein with the familial A53T mutation, or into wild-type mice causes spreading of alpha-synuclein pathology in the CNS. Considering that wild-type mice naturally also express a threonine at codon 53 of alpha-synuclein, it has remained unclear whether human wild-type alpha-synuclein alone, in the absence of endogenously expressed mouse alpha-synuclein, would support a similar propagation of alpha-synuclein pathology in vivo. RESULTS: Here we show that brain extracts from two patients with MSA and two patients with probable incidental Lewy body disease (iLBD) but not phosphate-buffered saline induce prion-like spreading of pathological alpha-synuclein after intrastriatal injection into mice expressing human wild-type alpha-synuclein. Mice were sacrificed at 3, 6, and 9 months post injection and analyzed neuropathologically and biochemically. Mice injected with brain extracts from patients with MSA or probable iLBD both accumulated intraneuronal inclusion bodies, which stained positive for phosphorylated alpha-synuclein and appeared predominantly within the injected brain hemisphere after 6 months. After 9 months these intraneuronal inclusion bodies had spread to the contralateral hemisphere and more rostral and caudal areas. Biochemical analysis showed that brains of mice injected with brain extracts from patients with MSA and probable iLBD contained hyperphosphorylated alpha-synuclein that also seeded aggregation of recombinant human wild-type alpha-synuclein in a Thioflavin T binding assay. CONCLUSIONS: Our results indicate that human wild-type alpha-synuclein supports the prion-like spreading of alpha-synuclein pathology in the absence of endogenously expressed mouse alpha-synuclein in vivo." 
+
+
+
+UNSET STATEMENT_GROUP 
+
+SET STATEMENT_GROUP = "Group 5" 
+
+SET Citation = {"PubMed","Fibril growth and seeding capacity play key roles in alpha-synuclein-mediated apoptotic cell death.","26138444"} 
+
+SET Evidence = "The role of extracellular alpha-synuclein (alpha-syn) in the initiation and the spreading of neurodegeneration in Parkinson's disease (PD) has been studied extensively over the past 10 years. However, the nature of the alpha-syn toxic species and the molecular mechanisms by which they may contribute to neuronal cell loss remain controversial. In this study, we show that fully characterized recombinant monomeric, fibrillar or stabilized forms of oligomeric alpha-syn do not trigger significant cell death when added individually to neuroblastoma cell lines. However, a mixture of preformed fibrils (PFFs) with monomeric alpha-syn becomes toxic under conditions that promote their growth and amyloid formation. In hippocampal primary neurons and ex vivo hippocampal slice cultures, alpha-syn PFFs are capable of inducing a moderate toxicity over time that is greatly exacerbated upon promoting fibril growth by addition of monomeric alpha-syn. The causal relationship between alpha-syn aggregation and cellular toxicity was further investigated by assessing the effect of inhibiting fibrillization on alpha-syn-induced cell death. Remarkably, our data show that blocking fibril growth by treatment with known pharmacological inhibitor of alpha-syn fibrillization (Tolcapone) or replacing monomeric alpha-syn by monomeric beta-synuclein in alpha-syn mixture composition prevent alpha-syn-induced toxicity in both neuroblastoma cell lines and hippocampal primary neurons. We demonstrate that exogenously added alpha-syn fibrils bind to the plasma membrane and serve as nucleation sites for the formation of alpha-syn fibrils and promote the accumulation and internalization of these aggregates that in turn activate both the extrinsic and intrinsic apoptotic cell death pathways in our cellular models. Our results support the hypothesis that ongoing aggregation and fibrillization of extracellular alpha-syn play central roles in alpha-syn extracellular toxicity, and suggest that inhibiting fibril growth and seeding capacity constitute a viable strategy for protecting against alpha-syn-induced toxicity and slowing the progression of neurodegeneration in PD and other synucleinopathies." 
+
+
+
+UNSET STATEMENT_GROUP 
+
+SET STATEMENT_GROUP = "Group 6" 
+
+SET Citation = {"PubMed","Mechanisms of alpha-synuclein action on neurotransmission: cell-autonomous and non-cell autonomous role.","25985082"} 
+
+SET Evidence = "Mutations and duplication/triplication of the alpha-synuclein (alphaSyn)-coding gene have been found to cause familial Parkinson's disease (PD), while genetic polymorphisms in the region controlling the expression level and stability of alphaSyn have been identified as risk factors for idiopathic PD, pointing to the importance of wild-type (wt) alphaSyn dosage in the disease. Evidence that alphaSyn is present in the cerebrospinal fluid and interstitial brain tissue and that healthy neuronal grafts transplanted into PD patients often degenerate suggests that extracellularly-released alphaSyn plays a role in triggering the neurodegenerative process. alphaSyn's role in neurotransmission has been shown in various cell culture models in which the protein was upregulated or deleted and in knock out and transgenic animal, with different results on alphaSyn's effect on synaptic vesicle pool size and mobilization, alphaSyn being proposed as a negative or positive regulator of neurotransmitter release. In this review, we discuss the effect of alphaSyn on pre- and post-synaptic compartments in terms of synaptic vesicle trafficking, calcium entry and channel activity, and we focus on the process of exocytosis and internalization of alphaSyn and on the spreading of alphaSyn-driven effects due to the presence of the protein in the extracellular milieu." 
+
+
+
+UNSET STATEMENT_GROUP 
+
+SET STATEMENT_GROUP = "Group 7" 
+
+SET Citation = {"PubMed","The Interplay between Alpha-Synuclein Clearance and Spreading.","25874605"} 
+
+SET Evidence = "Parkinson's Disease (PD) is a complex neurodegenerative disorder classically characterized by movement impairment. Pathologically, the most striking features of PD are the loss of dopaminergic neurons and the presence of intraneuronal protein inclusions primarily composed of alpha-synuclein (alpha-syn) that are known as Lewy bodies and Lewy neurites in surviving neurons. Though the mechanisms underlying the progression of PD pathology are unclear, accumulating evidence suggests a prion-like spreading of alpha-syn pathology. The intracellular homeostasis of alpha-syn requires the proper degradation of the protein by three mechanisms: chaperone-mediated autophagy, macroautophagy and ubiquitin-proteasome. Impairment of these pathways might drive the system towards an alternative clearance mechanism that could involve its release from the cell. This increased release to the extracellular space could be the basis for alpha-syn propagation to different brain areas and, ultimately, for the spreading of pathology and disease progression. Here, we review the interplay between alpha-syn degradation pathways and its intercellular spreading. The understanding of this interplay is indispensable for obtaining a better knowledge of the molecular basis of PD and, consequently, for the design of novel avenues for therapeutic intervention." 
+
+
+
+UNSET STATEMENT_GROUP 
+
+SET STATEMENT_GROUP = "Group 8" 
+
+SET Citation = {"PubMed","Neuron-to-neuron alpha-synuclein propagation in vivo is independent of neuronal injury.","25853980"} 
+
+SET Evidence = "INTRODUCTION: Interneuronal propagation of alpha-synuclein has been demonstrated in a variety of experimental models and may be involved in disease progression during the course of human synucleinopathies. The aim of this study was to assess the role that neuronal injury or, vice versa, cell integrity could have in facilitating interneuronal alpha-synuclein transfer and consequent protein spreading in an in vivo animal model. RESULTS: Viral vectors carrying the DNA for human alpha-synuclein were injected into the rat vagus nerve to trigger protein overexpression in the medulla oblongata and consequent spreading of human alpha-synuclein toward pons, midbrain and forebrain. Two vector preparations sharing the same viral construct were manufactured using identical procedures with the exception of methods for their purification. They were also injected at concentrations that induced comparable levels of alpha-synuclein transduction/overexpression in the medulla oblongata. alpha-Synuclein load was associated with damage (at 6 weeks post injection) and death (at 12 weeks) of medullary neurons after treatment with only one of the two vector preparations. Of note, neuronal injury and degeneration was accompanied by a substantial reduction of caudo-rostral propagation of human alpha-synuclein. CONCLUSIONS: Interneuronal alpha-synuclein transfer, which underlies protein spreading from the medulla oblongata to more rostral brain regions in this rat model, is not a mere consequence of passive release from damaged or dead neurons. Neuronal injury and degeneration did not exacerbate alpha-synuclein propagation. In fact, data suggest that cell-to-cell passage of alpha-synuclein may be particularly efficient between intact, relatively healthy neurons." 
+
+
+
+UNSET STATEMENT_GROUP 
+
+SET STATEMENT_GROUP = "Group 9" 
+
+SET Citation = {"PubMed","Alpha-synuclein spreading in Parkinson's disease.","25565982"} 
+
+SET Evidence = "Formation and accumulation of misfolded protein aggregates are a central hallmark of several neurodegenerative diseases. In Parkinson's disease (PD), the aggregation-prone protein alpha-synuclein (alpha-syn) is the culprit. In the past few years, another piece of the puzzle has been added with data suggesting that alpha-syn may self-propagate, thereby contributing to the progression and extension of PD. Of particular importance, it was the seminal observation of Lewy bodies (LB), a histopathological signature of PD, in grafted fetal dopaminergic neurons in the striatum of PD patients. Consequently, these findings were a conceptual breakthrough, generating the "host to graft transmission" hypothesis, also called the "prion-like hypothesis." Several in vitro and in vivo studies suggest that alpha-syn can undergo a toxic templated conformational change, spread from cell to cell and from region to region, and initiate the formation of "LB-like aggregates," contributing to the PD pathogenesis. Here, we will review and discuss the current knowledge for such a putative mechanism on the prion-like nature of alpha-syn, and discuss about the proper use of the term prion-like." 
+
+
+
+UNSET STATEMENT_GROUP 
+
+SET STATEMENT_GROUP = "Group 10" 
+
+SET Citation = {"PubMed","Autophagy modulates SNCA/alpha-synuclein release, thereby generating a hostile microenvironment.","25484190"} 
+
+SET Evidence = "SNCA/alpha-synuclein aggregation plays a crucial role in synucleinopathies such as Parkinson disease and dementia with Lewy bodies. Aggregating and nonaggregating SNCA species are degraded by the autophagy-lysosomal pathway (ALP). Previously, we have shown that the ALP is not only responsible for SNCA degradation but is also involved in the intracellular aggregation process of SNCA. An additional role of extracellular SNCA in the pathology of synucleinopathies substantiating a prion-like propagation hypothesis has been suggested since released SNCA species and spreading of SNCA pathology throughout neural cells have been observed. However, the molecular interplay between intracellular pathways, SNCA aggregation, release, and response of the local microenvironment remains unknown. Here, we attributed SNCA-induced toxicity mainly to secreted species in a cell culture model of SNCA aggregation and in SNCA transgenic mice: We showed that ALP inhibition by bafilomycinA1 reduced intracellular SNCA aggregation but increased secretion of smaller oligomers that exacerbated microenvironmental response including uptake, inflammation, and cellular damage. Low-aggregated SNCA was predominantly released by exosomes and RAB11A-associated pathways whereas high-aggregated SNCA was secreted by membrane shedding. In summary, our study revealed a novel role of the ALP by linking protein degradation to nonclassical secretion for toxic SNCA species. Thus, impaired ALP in the diseased brain not only limits intracellular degradation of misfolded proteins, but also leads to a detrimental microenvironmental response due to enhanced SNCA secretion. These findings suggest that the major toxic role of SNCA is related to its extracellular species and further supports a protective role of intracellular SNCA aggregation." 
+
+
+
+UNSET STATEMENT_GROUP 
+
+SET STATEMENT_GROUP = "Group 11" 
+
+SET Citation = {"PubMed","alpha-Synuclein staging in the amygdala of a Parkinson's disease model: cell types involved.","25345880"} 
+
+SET Evidence = "Lewy bodies (ubiquitin and alpha-synuclein aggregates) can be detected in brain areas in a predictable sequence of six neuropathological stages in Parkinson's disease. Brainstem and olfactory structures are involved in stage 1, whereas the substantia nigra and amygdala are involved in stage 3, prior to cortical spreading. Amygdaloid pathology has been suggested to contribute to non-motor symptoms such as olfactory dysfunction and emotional impairment. This work analysed the distribution of alpha-synuclein at 16, 30, 43 and 56 weeks in the basolateral, central and cortical amygdaloid complexes of A53T transgenic mice. The expression of calbindin, calretinin and somatostatin was compared in control and transgenic animals. Co-localisation of these markers with alpha-synuclein was performed. Triple labeling of calbindin, somatostatin and alpha-synuclein was also investigated. Quantification was carried out using an optical dissector, ImageJ software and confocal microscopy. alpha-Synuclein-positive cells were mainly concentrated in the basolateral and cortical amygdaloid complexes with a non-significant increase over time from 16 to 30-43 weeks and a significant decrease thereafter. The expression of interneuron markers showed a significant decrease with aging in control animals. When comparing these markers between control and transgenic mice, calretinin was moderately decreased, but calbindin and somatostatin were highly reduced, particularly in the cortical amygdaloid complex. alpha-Synuclein mostly co-localised with calbindin and a number of these cells also co-expressed somatostatin. These data on alpha-synucleinopathy staging in the amygdala could help to explain non-motor symptoms as well as to understand the progression of Parkinson's disease in the brain." 
+
+
+
+UNSET STATEMENT_GROUP 
+
+SET STATEMENT_GROUP = "Group 12" 
+
+SET Citation = {"PubMed","Neuropathology of multiple system atrophy: new thoughts about pathogenesis.","25297524"} 
+
+SET Evidence = "Multiple system atrophy (MSA) is a fatal adult-onset neurodegenerative disorder of uncertain etiology, clinically manifesting with autonomic failure associated with parkinsonism, cerebellar dysfunction, and pyramidal signs in variable combination. The pathological process affects central autonomic, striatonigral, and olivopontocerebellar systems. These show varying degrees of neurodegeneration and underlie the stratification of the heterogenous disorder into MSA-P and MSA-C clinical variants, which correlate to the morphologic phenotypes of striatonigral degeneration and olivopontocerebellar atrophy (MSA-C). The lesions are not limited to these most consistently and severely affected systems but may involve many other parts of the central, peripheral, and autonomic nervous systems, underpinning the multisystem character of MSA. The histological core feature are glial cytoplasmic inclusions (GCIs, Papp-Lantos bodies) in all types of oligodendroglia that contain aggregates of misfolded alpha-Synuclein (alpha-Syn). In addition to the ectopic appearance of alpha-Syn in oligodendrocytes and other cells, oxidative stress, proteasomal and mitochondrial dysfunction, excitotoxiciy, neuroinflammation, metabolic changes, and energy failure are important contributors to the pathogenesis of MSA, as shown by various neurotoxic and transgenic animal models. Although the basic mechanisms of alpha-Syn-triggered neurodegeneration are not completely understood, neuron-to-oligodendrocyte transfer of alpha-Syn by prion-like spreading, inducing oligodendroglial and myelin dysfunction associated with chronic neuroinflammation, are suggested finally to lead to a system-specific pattern of neurodegeneration." 
+
+
+
+UNSET STATEMENT_GROUP 
+
+SET STATEMENT_GROUP = "Group 13" 
+
+SET Citation = {"PubMed","Intracellular processing of disease-associated alpha-synuclein in the human brain suggests prion-like cell-to-cell spread.","24878508"} 
+
+SET Evidence = "Dementia with Lewy bodies (DLB), Parkinson's disease (PD) and multiple system atrophy are characterized by the deposition of disease-associated alpha-synuclein. In the present study we 1) examined the molecular specificity of the novel anti-alpha-synuclein 5G4 antibody; 2) evaluated immunoreactivity patterns and their correlation in human brain tissue with micro- and astrogliosis in 57 cases with PD or DLB; and 3) performed a systematic immunoelectron microscopical mapping of subcellular localizations. 5G4 strongly binds to the high molecular weight fraction of beta-sheet rich oligomers, while no binding to primarily disordered oligomers or monomers was observed. We show novel localizations of disease-associated alpha-synuclein including perivascular macrophages, ependyma and cranial nerves. alpha-Synuclein immunoreactive neuropil dots and thin threads associate more with glial reaction than Lewy bodies alone. Astrocytic alpha-synuclein is an important component of the pathology. Furthermore, we document ultrastructurally the pathway of processing of disease-associated alpha-synuclein within neurons and astroglial cells. Interaction of mitochondria and disease-associated alpha-synuclein plays a key role in the molecular-structural cytopathogenesis of disorders with Lewy bodies. We conclude that 1) the 5G4 antibody has strong selectivity for beta-sheet rich alpha-synuclein oligomers; 2) Lewy bodies themselves are not the most relevant morphological substrate that evokes tissue lesioning; 3) both neurons and astrocytes internalize disease-associated alpha-synuclein in the human brain, suggesting prion-like cell-to-cell spread of alpha-synuclein by uptake from surrounding structures, as shown previously in experimental observations." 
+
+
+
+UNSET STATEMENT_GROUP 
+
+SET STATEMENT_GROUP = "Group 14" 
+
+SET Citation = {"PubMed","Alpha-synuclein spreading in M83 mice brain revealed by detection of pathological alpha-synuclein by enhanced ELISA.","24624994"} 
+
+SET Evidence = "BACKGROUND: The accumulation of misfolded proteins appears as a fundamental pathogenic process in human neurodegenerative diseases. In the case of synucleinopathies such as Parkinson's disease (PD) or dementia with Lewy bodies (DLB), the intraneuronal deposition of aggregated alpha-synuclein (alphaS) is a major characteristic of the disease, but the molecular basis distinguishing the disease-associated protein (alphaSD) from its normal counterpart remains poorly understood. However, recent research suggests that a prion-like mechanism could be involved in the inter-cellular and inter-molecular propagation of aggregation of the protein within the nervous system. RESULTS: Our data confirm our previous observations of disease acceleration in a transgenic mouse line (M83) overexpressing a mutated (A53T) form of human alphaS, following inoculation of either brain extracts from sick M83 mice or fibrillar recombinant alphaS. A similar phenomenon is observed following a "second passage" in the M83 mouse model, including after stereotactic inoculations into the hippocampus or cerebellum. For further molecular analyses of alphaSD, we designed an ELISA test that identifies alphaSD specifically in sick mice and in the brain regions targeted by the pathological process in this mouse model. alphaSD distribution, mainly in the caudal brain regions and spinal cord, overall appears remarkably uniform, whatever the conditions of experimental challenge. In addition to specific detection of alphaSD immunoreactivity using an antibody against Ser129 phosphorylated alphaS, similar results were observed in ELISA with several other antibodies against the C-terminal part of alphaS, including an antibody against non phosphorylated alphaS. This also indicated consistent immunoreactivity of the murine alphaS protein specifically in the affected brain regions of sick mice. CONCLUSIONS: Prion-like behaviour in propagation of the disease-associated alphaS was confirmed with the M83 transgenic mouse model, that could be followed by an ELISA test. The ELISA data question their possible relationship with the conformational differences between the disease-associated alphaS and its normal counterpart." 
+
+
+
+UNSET STATEMENT_GROUP 
+
+SET STATEMENT_GROUP = "Group 15" 
+
+SET Citation = {"PubMed","alpha-Synuclein in the olfactory system in Parkinson's disease: role of neural connections on spreading pathology.","24135772"} 
+
+SET Evidence = "Parkinson's disease (PD) is a neurodegenerative disease characterized by bradykinesia, rigidity, resting tremor, and postural instability. Neuropathologically, intracellular aggregates of alpha-synuclein in Lewy bodies and Lewy neurites appear in particular brain areas according to a sequence of stages. Clinical diagnosis is usually established when motor symptoms are evident (corresponding to Braak stage III or later), years or even decades after onset of the disease. Research at early stages is therefore essential to understand the etiology of PD and improve treatment. Although classically considered as a motor disease, non-motor symptoms have recently gained interest. Olfactory deficits are among the earliest non-motor features of PD. Interestingly, alpha-synuclein deposits are present in the olfactory bulb and anterior olfactory nucleus at Braak stage I. Several lines of evidence have led to proposals that PD pathology spreads by a prion-like mechanism via the olfactory and vagal systems to the substantia nigra. In this context, current data on the temporal appearance of alpha-synuclein aggregates in the olfactory system of both humans and transgenic mice are of particular relevance. In addition to the proposed retrograde nigral involvement via brainstem nuclei, olfactory pathways could potentially reach the substantia nigra, and the possibility of centrifugal progression warrants investigation. This review analyzes the involvement of alpha-synuclein in different elements of the olfactory system, in both humans and transgenic models, from the hodological perspective of possible anterograde and/or retrograde progression of this proteinopathy within the olfactory system and beyond-to the substantia nigra and the remainder of the central and peripheral nervous systems." 
+
+
+
+UNSET STATEMENT_GROUP 
+
+SET STATEMENT_GROUP = "Group 16" 
+
+SET Citation = {"PubMed","Caudo-rostral brain spreading of alpha-synuclein through vagal connections.","23703938"} 
+
+SET Evidence = "alpha-Synuclein accumulation and pathology in Parkinson's disease typically display a caudo-rostral pattern of progression, involving neuronal nuclei in the medulla oblongata at the earliest stages. In this study, selective expression and accumulation of human alpha-synuclein within medullary neurons was achieved via retrograde transport of adeno-associated viral vectors unilaterally injected into the vagus nerve in the rat neck. The exogenous protein progressively spread toward more rostral brain regions where it could be detected within axonal projections. Propagation to the pons, midbrain and forebrain followed a stereotypical pattern of topographical distribution. It affected areas such as the coeruleus-subcoeruleus complex, dorsal raphae, hypothalamus and amygdala ipsilateral and, to a lesser extent, contralateral to the injection side. Spreading was accompanied by evidence of neuritic pathology in the form of axonal varicosities intensely immunoreactive for human alpha-synuclein and containing Thioflavin-S-positive fibrils. Thus, overexpression of human alpha-synuclein in the lower brainstem is sufficient to induce its long-distance caudo-rostral propagation, recapitulating features of Parkinson's disease and mechanisms of disease progression." 
+
+
+
+UNSET STATEMENT_GROUP 
+
