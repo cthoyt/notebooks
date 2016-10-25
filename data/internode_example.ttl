@@ -1,0 +1,89 @@
+@prefix ie_cls: <http://example.org/iconn/> .
+@prefix in: <http://example.org/inodes/> .
+@prefix in_cls: <http://example.org/icolor/> .
+@prefix pconn: <http://example.org/pconn/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rn: <http://example.org/nodes/> .
+@prefix rn_cls: <http://example.org/color/> .
+@prefix sconn: <http://example.org/sconn/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+in:in12 a in_cls:in_cls1 ;
+    ie_cls:ie_cls1 rn:rn0,
+        rn:rn5 .
+
+in:in13 a in_cls:in_cls1 ;
+    ie_cls:ie_cls1 rn:rn0,
+        rn:rn6 .
+
+in:in14 a in_cls:in_cls1 ;
+    ie_cls:ie_cls1 rn:rn1,
+        rn:rn5 .
+
+in:in15 a in_cls:in_cls1 ;
+    ie_cls:ie_cls1 rn:rn2,
+        rn:rn7 .
+
+in:in16 a in_cls:in_cls1 ;
+    ie_cls:ie_cls1 rn:rn3,
+        rn:rn4 .
+
+in:in17 a in_cls:in_cls1 ;
+    ie_cls:ie_cls1 rn:rn3,
+        rn:rn5 .
+
+in:in18 a in_cls:in_cls1 ;
+    ie_cls:ie_cls1 rn:rn3,
+        rn:rn7 .
+
+rn:rn1 a rn_cls:red ;
+    pconn:rg rn:rn11,
+        rn:rn8,
+        rn:rn9 ;
+    sconn:rr rn:rn3 .
+
+rn:rn2 a rn_cls:red ;
+    pconn:rg rn:rn10,
+        rn:rn11 .
+
+rn:rn4 a rn_cls:blue ;
+    pconn:bg rn:rn11,
+        rn:rn8 ;
+    sconn:bb rn:rn5,
+        rn:rn6 .
+
+rn:rn0 a rn_cls:red ;
+    pconn:rg rn:rn9 ;
+    sconn:rr rn:rn3 .
+
+rn:rn6 a rn_cls:blue ;
+    pconn:bg rn:rn10,
+        rn:rn8,
+        rn:rn9 ;
+    sconn:bb rn:rn7 .
+
+rn:rn7 a rn_cls:blue ;
+    pconn:bg rn:rn10,
+        rn:rn11,
+        rn:rn8,
+        rn:rn9 .
+
+rn:rn10 a rn_cls:green .
+
+rn:rn5 a rn_cls:blue ;
+    sconn:bb rn:rn6 .
+
+rn:rn8 a rn_cls:green ;
+    sconn:gg rn:rn10 .
+
+rn:rn9 a rn_cls:green ;
+    sconn:gg rn:rn11 .
+
+rn:rn3 a rn_cls:red ;
+    pconn:rg rn:rn11 .
+
+rn:rn11 a rn_cls:green .
+
+
