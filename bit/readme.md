@@ -14,3 +14,5 @@ This folder contains the work I've done at University of Bonn, including all of 
 | mmdd | Molecular Modelling and Drug Design |
 | ms   | Modeling and Simulation Lab         |
 | pl2  | Programming Lab II                  |
+| pl3  | Programming Lab III                 |
+| sbi  | Structural Bioinformatics           |
