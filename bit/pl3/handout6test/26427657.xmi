@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:provenance="http:///de/fraunhofer/scai/bio/extraction/types/meta/provenance.ecore" xmlns:cas="http:///uima/cas.ecore" xmlns:xmi="http://www.omg.org/XMI" xmlns:meta2="http:///de/fraunhofer/scai/bio/extraction/types/text/documentelement/meta.ecore" xmlns:meta="http:///de/fraunhofer/scai/bio/extraction/types/meta.ecore" xmlns:tcas="http:///uima/tcas.ecore" xmlns:container="http:///de/fraunhofer/scai/bio/extraction/types/text/documentelement/container.ecore" xmlns:text="http:///de/fraunhofer/scai/bio/extraction/types/text.ecore" xmlns:structure="http:///de/fraunhofer/scai/bio/extraction/types/text/documentelement/structure.ecore" xmlns:image="http:///de/fraunhofer/scai/bio/extraction/types/image.ecore" xmlns:documentelement="http:///de/fraunhofer/scai/bio/extraction/types/text/documentelement.ecore" xmi:version="2.0">
+    <cas:NULL xmi:id="0"/>
+    <meta:Person xmi:id="1" surname="uimahpc"/>
+    <meta:Person xmi:id="6" surname="marc"/>
+    <provenance:AgentProvenance xmi:id="11" user="1"/>
+    <provenance:AgentProvenance xmi:id="13" user="6"/>
+    <provenance:ActivityProvenance xmi:id="15" componentId="de.fraunhofer.scai.bio.uima.core.reader.XCasMessageReader" startedAtTime="515" endedAtTime="522" version="7.2-20161003210158-7300-5" parameters="115 145 205 85 210 190 95 100" wasAssociatedWith="11"/>
+    <provenance:ActivityProvenance xmi:id="32" componentId="de.fraunhofer.scai.bio.uima.SCAIView2XCAS.reader.SCAIView2XCASReader" startedAtTime="529" endedAtTime="536" version="7.5-SNAPSHOT-20161201231557-7460-10" parameters="140 185 150 160 70 200 175 170 125 105 80 90 165 135 110" wasAssociatedWith="13"/>
+    <provenance:ActivityProvenance xmi:id="56" componentId="de.fraunhofer.scai.bio.uima.prominer.annotator.ProMiner" startedAtTime="543" endedAtTime="550" version="7.2-20161003210158-7300-5" parameters="130 195 120 155 180" wasAssociatedWith="11"/>
+    <meta:Parameter xmi:id="70" key="name" value="SCAIViewWebService" wasGeneratedBy="32" hash="e4dc5df1b61c0887215e90471cec2b15"/>
+    <meta:Parameter xmi:id="75" key="inputString" value="" wasGeneratedBy="32"/>
+    <meta:Parameter xmi:id="80" key="event" value="notSet" wasGeneratedBy="32" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="85" key="jmsTool" value="ProMinerDeployer (7.2)" wasGeneratedBy="15" hash="1272bebab2743a412c9e2f6ad7e33f74"/>
+    <meta:Parameter xmi:id="90" key="namespace" value="http://scaiview.bio.scai.fraunhofer.de/" wasGeneratedBy="32" hash="7cb6fab1c93ae414bfc964f0fbbaf4b1"/>
+    <meta:Parameter xmi:id="95" key="recipients" value="notSet" wasGeneratedBy="15" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="100" key="event" value="notSet" wasGeneratedBy="15" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="105" key="limit" value="10" wasGeneratedBy="32" hash="d3d9446802a44259755d38e6d163e820"/>
+    <meta:Parameter xmi:id="110" key="QueryFile" value="etc/query" wasGeneratedBy="32" hash="7a63a8c9a952c271a60d8d9d6d0dc6d6"/>
+    <meta:Parameter xmi:id="115" key="jmsBroker" value="notSet" wasGeneratedBy="15" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="120" key="workingView" value="DocumentView" wasGeneratedBy="56" hash="381a68e618f574166c8ec9eb2b110f73"/>
+    <meta:Parameter xmi:id="125" key="username" value="notSet" wasGeneratedBy="32" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="130" key="resourceBaseFolder" value="/data/home/uimahpc/RELEASE/7.2/scaleout/../models/ProMinerNER" wasGeneratedBy="56" hash="1c6b13078793acd00b88f076190d4d7a"/>
+    <meta:Parameter xmi:id="135" key="offset" value="25000" wasGeneratedBy="32" hash="70f44538106c52ad2a01ffba924792e2"/>
+    <meta:Parameter xmi:id="140" key="Query" value="[PMID:&quot;27318168&quot;] OR [PMID:&quot;27125668&quot;] OR [PMID:&quot;26427657&quot;]" wasGeneratedBy="32" hash="4e42b421edc12f44d704d32abb92551a"/>
+    <meta:Parameter xmi:id="145" key="jmsIni" value="/data/home/uimahpc/RELEASE/7.2/scaleout/microservices/etc/jms-extern.ini" wasGeneratedBy="15" hash="3445b625ed3402b1f0ee1368b2fa8728"/>
+    <meta:Parameter xmi:id="150" key="documentCollectionName" value="MZ_9ea5d622-370c-482f-ba3b-9ba89d3c3c75" wasGeneratedBy="32" hash="d9d243c701f0d9f535e68f98920f53be"/>
+    <meta:Parameter xmi:id="155" key="annotationMode" value="false" wasGeneratedBy="56" hash="68934a3e9455fa72420237eb05902327"/>
+    <meta:Parameter xmi:id="160" key="connection" value="http://academia.scaiview.com/academia/" wasGeneratedBy="32" hash="f768b69b835dcf03221a64c4d6fb212d"/>
+    <meta:Parameter xmi:id="165" key="trackingNr" value="notSet" wasGeneratedBy="32" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="170" key="jmsQueue" value="ProMinerNER.Homo_sapiens_ns_mapped,interfacer.xmi.222df7bc-eda0-43ae-804c-60c2265c4640," wasGeneratedBy="32" hash="4a6130f941359b35625b16ff15b9ece4"/>
+    <meta:Parameter xmi:id="175" key="recipients" value="ProMinerNER.Homo_sapiens_ns_mapped,interfacer.xmi.222df7bc-eda0-43ae-804c-60c2265c4640," wasGeneratedBy="32" hash="4a6130f941359b35625b16ff15b9ece4"/>
+    <meta:Parameter xmi:id="180" key="annotationDeduplication" value="false" wasGeneratedBy="56" hash="68934a3e9455fa72420237eb05902327"/>
+    <meta:Parameter xmi:id="185" key="license" value="MDAzMGxvY2F0aW9uIHd3dy5zY2FpLmZyYXVuaG9mZXIuZGUvbXppbW1lcm1hbm4KMDAxY2lkZW50aWZpZXIgdGVzdCBsaWNlbnNlCjAwMjBjaWQgdGltZSA8IDIwNDItMDEtMDFUMDA6MDAKMDAyZnNpZ25hdHVyZSAJPOFDaQbvzzfyMuZOWHaYgFxTnpiSu3K6JZ1ys7Vp1go" wasGeneratedBy="32" hash="defe4cc6e97a767cec84871f9c2eecd6"/>
+    <meta:Parameter xmi:id="190" key="license" value="notSet" wasGeneratedBy="15" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="195" key="resourceFolder" value="Homo_sapiens_ns_mapped" wasGeneratedBy="56" hash="d8c0e5f8d803b5efc59275324598f876"/>
+    <meta:Parameter xmi:id="200" key="password" value="notSet" wasGeneratedBy="32" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="205" key="jmsQueue" value="ProMinerNER.Homo_sapiens_ns_mapped" wasGeneratedBy="15" hash="3b65aea24401ccd7d33fb9ef6707b853"/>
+    <meta:Parameter xmi:id="210" key="documentCollectionName" value="notSet" wasGeneratedBy="15" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <tcas:DocumentAnnotation xmi:id="215" sofa="501" begin="0" end="1600" language="x-unspecified"/>
+    <meta:Header xmi:id="220" sofa="501" begin="0" end="0" source="Tumour biology : the journal of the International Society for Oncodevelopmental Biology and Medicine" title="ROBO1 deletion as a novel germline alteration in breast and colorectal cancer patients." authors="557 562 567 572 577 582 587 592 597 602" publicationDate="607" ISSN="" documentConcept="611"/>
+    <meta:KeyValue xmi:id="245" key="entityProvenance.documentURI" value="file:/home/marc/workspace-mars/TheInterfacer/26427657"/>
+    <meta:KeyValue xmi:id="249" key="license" value="MDAzMGxvY2F0aW9uIHd3dy5zY2FpLmZyYXVuaG9mZXIuZGUvbXppbW1lcm1hbm4KMDAxY2lkZW50aWZpZXIgdGVzdCBsaWNlbnNlCjAwMjBjaWQgdGltZSA8IDIwNDItMDEtMDFUMDA6MDAKMDAyZnNpZ25hdHVyZSAJPOFDaQbvzzfyMuZOWHaYgFxTnpiSu3K6JZ1ys7Vp1go"/>
+    <meta:KeyValue xmi:id="253" key="tracking-nr" value="MZ_9ea5d622-370c-482f-ba3b-9ba89d3c3c75"/>
+    <meta:KeyValue xmi:id="257" key="event" value="ANNOTATION"/>
+    <meta:KeyValue xmi:id="261" key="unit" value="14 [NNE],14 [Homo_sapiens_ns_mapped]"/>
+    <provenance:EntityProvenance xmi:id="265" documentID="7c8d0332cc292a7da8cd73b46450532c4e2f5d488e82746edb0ab2326066f5d7" userSuppliedID="26427657" wasDerivedFrom="http://academia.scaiview.com/academia/" workflowProvenance="32 15 56" wasGeneratedBy="32" wasAttributedTo="13" documentCollectionName="MZ_9ea5d622-370c-482f-ba3b-9ba89d3c3c75"/>
+    <tcas:DocumentAnnotation xmi:id="279" sofa="508" begin="0" end="1600" language="x-unspecified"/>
+    <container:FrontMatter xmi:id="284" sofa="508" begin="0" end="1600" wasGeneratedBy="32"/>
+    <meta2:DocumentTitle xmi:id="290" sofa="508" begin="0" end="87" wasGeneratedBy="32"/>
+    <meta2:Abstract xmi:id="298" sofa="508" begin="89" end="1598" wasGeneratedBy="32"/>
+    <structure:List xmi:id="304" sofa="508" begin="0" end="1600" wasGeneratedBy="32" rhetorical="KEYWORDS"/>
+    <meta:Label xmi:id="312" languageTag="en" value="BRCA1"/>
+    <meta:Label xmi:id="315" languageTag="en" value="BRCA2"/>
+    <meta:Label xmi:id="318" languageTag="en" value="CHEK2"/>
+    <meta:Label xmi:id="321" languageTag="en" value="MLH1"/>
+    <meta:Label xmi:id="324" languageTag="en" value="MSH2"/>
+    <meta:Label xmi:id="327" languageTag="en" value="ROBO1"/>
+    <meta:Label xmi:id="330" languageTag="en" value="TP53"/>
+    <meta:Concept xmi:id="333" prefLabel="318" identifier="HS040386" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="339" prefLabel="321" identifier="HS047999" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="345" prefLabel="324" identifier="HS048192" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="351" prefLabel="327" identifier="HS051735" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="357" prefLabel="312" identifier="HS052746" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="363" prefLabel="315" identifier="HS052772" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="369" prefLabel="330" identifier="HS053098" identifierSource="Homo_sapiens_ns_mapped"/>
+    <text:NormalizedNamedEntity xmi:id="375" sofa="508" begin="0" end="5" wasGeneratedBy="56" concept="351" synonym="620"/>
+    <text:NormalizedNamedEntity xmi:id="384" sofa="508" begin="513" end="518" wasGeneratedBy="56" concept="357" synonym="624"/>
+    <text:NormalizedNamedEntity xmi:id="393" sofa="508" begin="520" end="525" wasGeneratedBy="56" concept="363" synonym="628"/>
+    <text:NormalizedNamedEntity xmi:id="402" sofa="508" begin="527" end="531" wasGeneratedBy="56" concept="339" synonym="632"/>
+    <text:NormalizedNamedEntity xmi:id="411" sofa="508" begin="533" end="537" wasGeneratedBy="56" concept="345" synonym="636"/>
+    <text:NormalizedNamedEntity xmi:id="420" sofa="508" begin="539" end="543" wasGeneratedBy="56" concept="369" synonym="640"/>
+    <text:NormalizedNamedEntity xmi:id="429" sofa="508" begin="549" end="554" wasGeneratedBy="56" concept="333" synonym="644"/>
+    <text:NormalizedNamedEntity xmi:id="438" sofa="508" begin="610" end="615" wasGeneratedBy="56" concept="351" synonym="648"/>
+    <text:NormalizedNamedEntity xmi:id="447" sofa="508" begin="735" end="740" wasGeneratedBy="56" concept="351" synonym="652"/>
+    <text:NormalizedNamedEntity xmi:id="456" sofa="508" begin="899" end="904" wasGeneratedBy="56" concept="351" synonym="656"/>
+    <text:NormalizedNamedEntity xmi:id="465" sofa="508" begin="1002" end="1007" wasGeneratedBy="56" concept="351" synonym="660"/>
+    <text:NormalizedNamedEntity xmi:id="474" sofa="508" begin="1127" end="1132" wasGeneratedBy="56" concept="351" synonym="664"/>
+    <text:NormalizedNamedEntity xmi:id="483" sofa="508" begin="1317" end="1322" wasGeneratedBy="56" concept="351" synonym="668"/>
+    <text:NormalizedNamedEntity xmi:id="492" sofa="508" begin="1566" end="1571" wasGeneratedBy="56" concept="351" synonym="672"/>
+    <cas:Sofa xmi:id="501" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="ROBO1 deletion as a novel germline alteration in breast and colorectal cancer patients.&#10;&#10;Despite one third of breast (BC) and colorectal cancer (CRC) cases having a hereditary component, only a small proportion can be explained by germline mutations. The aim of this study was to identify potential genomic alterations related to cancer predisposition. Copy number variations (CNVs) were interrogated in 113 unrelated cases fulfilling the criteria for hereditary BC/CRC and presenting non-pathogenic mutations in BRCA1, BRCA2, MLH1, MSH2, TP53, and CHEK2 genes. An identical germline deep intronic deletion of ROBO1 was identified in three index patients using two microarray platforms (Agilent 4x180K and Affymetrix CytoScan HD). The ROBO1 deletion was confirmed by quantitative PCR (qPCR). Six relatives were also evaluated by CytoScan HD Array. Genomic analysis confirmed a co-segregation of the ROBO1 deletion with the occurrence of cancer in two families. Direct sequencing revealed no pathogenic ROBO1 point mutations. Transcriptomic analysis (HTA 2.0, Affymetrix) in two breast carcinomas from a single patient revealed ROBO1 down-expression with no splicing events near the intronic deletion. Deeper in silico analysis showed several enhancer regions and a histone methylation mark in the deleted region. The ROBO1 deletion in a putative transcriptional regulatory region, its down-expression in tumor samples, and the results of the co-segregation analysis revealing the presence of the alteration in affected individuals suggest a pathogenic effect of the ROBO1 in cancer predisposition. &#10;&#10;"/>
+    <cas:Sofa xmi:id="508" sofaNum="2" sofaID="DocumentView" mimeType="text" sofaString="ROBO1 deletion as a novel germline alteration in breast and colorectal cancer patients.&#10;&#10;Despite one third of breast (BC) and colorectal cancer (CRC) cases having a hereditary component, only a small proportion can be explained by germline mutations. The aim of this study was to identify potential genomic alterations related to cancer predisposition. Copy number variations (CNVs) were interrogated in 113 unrelated cases fulfilling the criteria for hereditary BC/CRC and presenting non-pathogenic mutations in BRCA1, BRCA2, MLH1, MSH2, TP53, and CHEK2 genes. An identical germline deep intronic deletion of ROBO1 was identified in three index patients using two microarray platforms (Agilent 4x180K and Affymetrix CytoScan HD). The ROBO1 deletion was confirmed by quantitative PCR (qPCR). Six relatives were also evaluated by CytoScan HD Array. Genomic analysis confirmed a co-segregation of the ROBO1 deletion with the occurrence of cancer in two families. Direct sequencing revealed no pathogenic ROBO1 point mutations. Transcriptomic analysis (HTA 2.0, Affymetrix) in two breast carcinomas from a single patient revealed ROBO1 down-expression with no splicing events near the intronic deletion. Deeper in silico analysis showed several enhancer regions and a histone methylation mark in the deleted region. The ROBO1 deletion in a putative transcriptional regulatory region, its down-expression in tumor samples, and the results of the co-segregation analysis revealing the presence of the alteration in affected individuals suggest a pathogenic effect of the ROBO1 in cancer predisposition. &#10;&#10;"/>
+    <meta:DateTime xmi:id="515" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:DateTime xmi:id="522" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:DateTime xmi:id="529" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:DateTime xmi:id="536" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:DateTime xmi:id="543" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:DateTime xmi:id="550" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:Person xmi:id="557" surname="Villacis" forename="Rolando A R" affiliation="International Research Center (CIPE), A.C. Camargo Cancer Center, Rua Taguá 440, São Paulo, CEP: 01508-010, SP, Brazil., International Research Center (CIPE), A.C. Camargo Cancer Center, Rua Taguá 440, São Paulo, CEP: 01508-010, SP, Brazil., International Research Center (CIPE), A.C. Camargo Cancer Center, Rua Taguá 440, São Paulo, CEP: 01508-010, SP, Brazil., Department of Pathology, Faculty of Medicine, University of São Paulo State (UNESP), Botucatu, SP, Brazil., International Research Center (CIPE), A.C. Camargo Cancer Center, Rua Taguá 440, São Paulo, CEP: 01508-010, SP, Brazil., Oncology Center, Sírio-Libanês Hospital, São Paulo, SP, Brazil., Department of Pathology, A.C. Camargo Cancer Center, São Paulo, SP, Brazil., Oncology Center, Sírio-Libanês Hospital, São Paulo, SP, Brazil., Department of Oncogenetics, A.C. Camargo Cancer Center, São Paulo, SP, Brazil., International Research Center (CIPE), A.C. Camargo Cancer Center, Rua Taguá 440, São Paulo, CEP: 01508-010, SP, Brazil. rogatto@fmb.unesp.br., Department of Urology, Faculty of Medicine, University of São Paulo State (UNESP), CEP: 18618-970, Botucatu, SP, Brazil. rogatto@fmb.unesp.br."/>
+    <meta:Person xmi:id="562" surname="Abreu" forename="Francine B"/>
+    <meta:Person xmi:id="567" surname="Miranda" forename="Priscila M"/>
+    <meta:Person xmi:id="572" surname="Domingues" forename="Maria A C"/>
+    <meta:Person xmi:id="577" surname="Carraro" forename="Dirce M"/>
+    <meta:Person xmi:id="582" surname="Santos" forename="Erika M M"/>
+    <meta:Person xmi:id="587" surname="Andrade" forename="Victor P"/>
+    <meta:Person xmi:id="592" surname="Rossi" forename="Benedito M"/>
+    <meta:Person xmi:id="597" surname="Achatz" forename="Maria I"/>
+    <meta:Person xmi:id="602" surname="Rogatto" forename="Silvia R"/>
+    <meta:Date xmi:id="607" day="0" month="3" year="2016"/>
+    <meta:Concept xmi:id="611" prefLabel="617" identifier="26427657" identifierSource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+    <meta:Label xmi:id="617" value="PMID:26427657"/>
+    <meta:Synonym xmi:id="620" synonymText="robo1" weight="0.0"/>
+    <meta:Synonym xmi:id="624" synonymText="brca1" weight="0.0"/>
+    <meta:Synonym xmi:id="628" synonymText="brca2" weight="0.0"/>
+    <meta:Synonym xmi:id="632" synonymText="mlh1" weight="0.0"/>
+    <meta:Synonym xmi:id="636" synonymText="msh2" weight="0.0"/>
+    <meta:Synonym xmi:id="640" synonymText="tp53" weight="0.0"/>
+    <meta:Synonym xmi:id="644" synonymText="chek2" weight="0.0"/>
+    <meta:Synonym xmi:id="648" synonymText="robo1" weight="0.0"/>
+    <meta:Synonym xmi:id="652" synonymText="robo1" weight="0.0"/>
+    <meta:Synonym xmi:id="656" synonymText="robo1" weight="0.0"/>
+    <meta:Synonym xmi:id="660" synonymText="robo1" weight="0.0"/>
+    <meta:Synonym xmi:id="664" synonymText="robo1" weight="0.0"/>
+    <meta:Synonym xmi:id="668" synonymText="robo1" weight="0.0"/>
+    <meta:Synonym xmi:id="672" synonymText="robo1" weight="0.0"/>
+    <cas:View sofa="501" members="1 6 11 13 15 32 56 70 75 80 85 90 95 100 105 110 115 120 125 130 135 140 145 150 155 160 165 170 175 180 185 190 195 200 205 210 215 220 245 249 253 257 261 265"/>
+    <cas:View sofa="508" members="279 284 290 298 304 312 315 318 321 324 327 330 333 339 345 351 357 363 369 375 384 393 402 411 420 429 438 447 456 465 474 483 492"/>
+</xmi:XMI>

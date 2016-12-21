@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:provenance="http:///de/fraunhofer/scai/bio/extraction/types/meta/provenance.ecore" xmlns:cas="http:///uima/cas.ecore" xmlns:xmi="http://www.omg.org/XMI" xmlns:meta2="http:///de/fraunhofer/scai/bio/extraction/types/text/documentelement/meta.ecore" xmlns:meta="http:///de/fraunhofer/scai/bio/extraction/types/meta.ecore" xmlns:tcas="http:///uima/tcas.ecore" xmlns:container="http:///de/fraunhofer/scai/bio/extraction/types/text/documentelement/container.ecore" xmlns:text="http:///de/fraunhofer/scai/bio/extraction/types/text.ecore" xmlns:structure="http:///de/fraunhofer/scai/bio/extraction/types/text/documentelement/structure.ecore" xmlns:image="http:///de/fraunhofer/scai/bio/extraction/types/image.ecore" xmlns:documentelement="http:///de/fraunhofer/scai/bio/extraction/types/text/documentelement.ecore" xmi:version="2.0">
+    <cas:NULL xmi:id="0"/>
+    <meta:Person xmi:id="1" surname="uimahpc"/>
+    <meta:Person xmi:id="6" surname="marc"/>
+    <provenance:AgentProvenance xmi:id="11" user="1"/>
+    <provenance:AgentProvenance xmi:id="13" user="6"/>
+    <provenance:ActivityProvenance xmi:id="15" componentId="de.fraunhofer.scai.bio.uima.core.reader.XCasMessageReader" startedAtTime="470" endedAtTime="477" version="7.2-20161003210158-7300-5" parameters="115 145 205 85 210 190 95 100" wasAssociatedWith="11"/>
+    <provenance:ActivityProvenance xmi:id="32" componentId="de.fraunhofer.scai.bio.uima.SCAIView2XCAS.reader.SCAIView2XCASReader" startedAtTime="484" endedAtTime="491" version="7.5-SNAPSHOT-20161201231557-7460-10" parameters="140 185 150 160 70 200 175 170 125 105 80 90 165 135 110" wasAssociatedWith="13"/>
+    <provenance:ActivityProvenance xmi:id="56" componentId="de.fraunhofer.scai.bio.uima.prominer.annotator.ProMiner" startedAtTime="498" endedAtTime="505" version="7.2-20161003210158-7300-5" parameters="130 195 120 155 180" wasAssociatedWith="11"/>
+    <meta:Parameter xmi:id="70" key="name" value="SCAIViewWebService" wasGeneratedBy="32" hash="e4dc5df1b61c0887215e90471cec2b15"/>
+    <meta:Parameter xmi:id="75" key="inputString" value="" wasGeneratedBy="32"/>
+    <meta:Parameter xmi:id="80" key="event" value="notSet" wasGeneratedBy="32" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="85" key="jmsTool" value="ProMinerDeployer (7.2)" wasGeneratedBy="15" hash="1272bebab2743a412c9e2f6ad7e33f74"/>
+    <meta:Parameter xmi:id="90" key="namespace" value="http://scaiview.bio.scai.fraunhofer.de/" wasGeneratedBy="32" hash="7cb6fab1c93ae414bfc964f0fbbaf4b1"/>
+    <meta:Parameter xmi:id="95" key="recipients" value="notSet" wasGeneratedBy="15" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="100" key="event" value="notSet" wasGeneratedBy="15" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="105" key="limit" value="10" wasGeneratedBy="32" hash="d3d9446802a44259755d38e6d163e820"/>
+    <meta:Parameter xmi:id="110" key="QueryFile" value="etc/query" wasGeneratedBy="32" hash="7a63a8c9a952c271a60d8d9d6d0dc6d6"/>
+    <meta:Parameter xmi:id="115" key="jmsBroker" value="notSet" wasGeneratedBy="15" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="120" key="workingView" value="DocumentView" wasGeneratedBy="56" hash="381a68e618f574166c8ec9eb2b110f73"/>
+    <meta:Parameter xmi:id="125" key="username" value="notSet" wasGeneratedBy="32" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="130" key="resourceBaseFolder" value="/data/home/uimahpc/RELEASE/7.2/scaleout/../models/ProMinerNER" wasGeneratedBy="56" hash="1c6b13078793acd00b88f076190d4d7a"/>
+    <meta:Parameter xmi:id="135" key="offset" value="25000" wasGeneratedBy="32" hash="70f44538106c52ad2a01ffba924792e2"/>
+    <meta:Parameter xmi:id="140" key="Query" value="[PMID:&quot;27318168&quot;] OR [PMID:&quot;27125668&quot;] OR [PMID:&quot;26427657&quot;]" wasGeneratedBy="32" hash="4e42b421edc12f44d704d32abb92551a"/>
+    <meta:Parameter xmi:id="145" key="jmsIni" value="/data/home/uimahpc/RELEASE/7.2/scaleout/microservices/etc/jms-extern.ini" wasGeneratedBy="15" hash="3445b625ed3402b1f0ee1368b2fa8728"/>
+    <meta:Parameter xmi:id="150" key="documentCollectionName" value="MZ_9ea5d622-370c-482f-ba3b-9ba89d3c3c75" wasGeneratedBy="32" hash="d9d243c701f0d9f535e68f98920f53be"/>
+    <meta:Parameter xmi:id="155" key="annotationMode" value="false" wasGeneratedBy="56" hash="68934a3e9455fa72420237eb05902327"/>
+    <meta:Parameter xmi:id="160" key="connection" value="http://academia.scaiview.com/academia/" wasGeneratedBy="32" hash="f768b69b835dcf03221a64c4d6fb212d"/>
+    <meta:Parameter xmi:id="165" key="trackingNr" value="notSet" wasGeneratedBy="32" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="170" key="jmsQueue" value="ProMinerNER.Homo_sapiens_ns_mapped,interfacer.xmi.222df7bc-eda0-43ae-804c-60c2265c4640," wasGeneratedBy="32" hash="4a6130f941359b35625b16ff15b9ece4"/>
+    <meta:Parameter xmi:id="175" key="recipients" value="ProMinerNER.Homo_sapiens_ns_mapped,interfacer.xmi.222df7bc-eda0-43ae-804c-60c2265c4640," wasGeneratedBy="32" hash="4a6130f941359b35625b16ff15b9ece4"/>
+    <meta:Parameter xmi:id="180" key="annotationDeduplication" value="false" wasGeneratedBy="56" hash="68934a3e9455fa72420237eb05902327"/>
+    <meta:Parameter xmi:id="185" key="license" value="MDAzMGxvY2F0aW9uIHd3dy5zY2FpLmZyYXVuaG9mZXIuZGUvbXppbW1lcm1hbm4KMDAxY2lkZW50aWZpZXIgdGVzdCBsaWNlbnNlCjAwMjBjaWQgdGltZSA8IDIwNDItMDEtMDFUMDA6MDAKMDAyZnNpZ25hdHVyZSAJPOFDaQbvzzfyMuZOWHaYgFxTnpiSu3K6JZ1ys7Vp1go" wasGeneratedBy="32" hash="defe4cc6e97a767cec84871f9c2eecd6"/>
+    <meta:Parameter xmi:id="190" key="license" value="notSet" wasGeneratedBy="15" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="195" key="resourceFolder" value="Homo_sapiens_ns_mapped" wasGeneratedBy="56" hash="d8c0e5f8d803b5efc59275324598f876"/>
+    <meta:Parameter xmi:id="200" key="password" value="notSet" wasGeneratedBy="32" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="205" key="jmsQueue" value="ProMinerNER.Homo_sapiens_ns_mapped" wasGeneratedBy="15" hash="3b65aea24401ccd7d33fb9ef6707b853"/>
+    <meta:Parameter xmi:id="210" key="documentCollectionName" value="notSet" wasGeneratedBy="15" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <tcas:DocumentAnnotation xmi:id="215" sofa="456" begin="0" end="1405" language="x-unspecified"/>
+    <meta:Header xmi:id="220" sofa="456" begin="0" end="0" source="Breast cancer research and treatment" title="Germline RECQL mutations in high risk Chinese breast cancer patients." authors="512 517 522 527 532 537 542 547 552 557" publicationDate="562" ISSN="" documentConcept="566"/>
+    <meta:KeyValue xmi:id="245" key="entityProvenance.documentURI" value="file:/home/marc/workspace-mars/TheInterfacer/27125668"/>
+    <meta:KeyValue xmi:id="249" key="license" value="MDAzMGxvY2F0aW9uIHd3dy5zY2FpLmZyYXVuaG9mZXIuZGUvbXppbW1lcm1hbm4KMDAxY2lkZW50aWZpZXIgdGVzdCBsaWNlbnNlCjAwMjBjaWQgdGltZSA8IDIwNDItMDEtMDFUMDA6MDAKMDAyZnNpZ25hdHVyZSAJPOFDaQbvzzfyMuZOWHaYgFxTnpiSu3K6JZ1ys7Vp1go"/>
+    <meta:KeyValue xmi:id="253" key="tracking-nr" value="MZ_9ea5d622-370c-482f-ba3b-9ba89d3c3c75"/>
+    <meta:KeyValue xmi:id="257" key="event" value="ANNOTATION"/>
+    <meta:KeyValue xmi:id="261" key="unit" value="12 [NNE],12 [Homo_sapiens_ns_mapped]"/>
+    <provenance:EntityProvenance xmi:id="265" documentID="f8f433725799f92bb8da876a20bfbb3e70859f1c7ed24a5af8d8fc2c8bf250d7" userSuppliedID="27125668" wasDerivedFrom="http://academia.scaiview.com/academia/" workflowProvenance="32 15 56" wasGeneratedBy="32" wasAttributedTo="13" documentCollectionName="MZ_9ea5d622-370c-482f-ba3b-9ba89d3c3c75"/>
+    <tcas:DocumentAnnotation xmi:id="279" sofa="463" begin="0" end="1405" language="x-unspecified"/>
+    <container:FrontMatter xmi:id="284" sofa="463" begin="0" end="1405" wasGeneratedBy="32"/>
+    <meta2:DocumentTitle xmi:id="290" sofa="463" begin="0" end="69" wasGeneratedBy="32"/>
+    <meta2:Abstract xmi:id="298" sofa="463" begin="71" end="1403" wasGeneratedBy="32"/>
+    <structure:List xmi:id="304" sofa="463" begin="0" end="1405" wasGeneratedBy="32" rhetorical="KEYWORDS"/>
+    <meta:Label xmi:id="312" languageTag="en" value="BRCA1"/>
+    <meta:Label xmi:id="315" languageTag="en" value="BRCA2"/>
+    <meta:Label xmi:id="318" languageTag="en" value="RECQL"/>
+    <meta:Label xmi:id="321" languageTag="en" value="TP53"/>
+    <meta:Concept xmi:id="324" prefLabel="318" identifier="HS051617" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="330" prefLabel="312" identifier="HS052746" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="336" prefLabel="315" identifier="HS052772" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="342" prefLabel="321" identifier="HS053098" identifierSource="Homo_sapiens_ns_mapped"/>
+    <text:NormalizedNamedEntity xmi:id="348" sofa="463" begin="9" end="14" wasGeneratedBy="56" concept="324" synonym="575"/>
+    <text:NormalizedNamedEntity xmi:id="357" sofa="463" begin="81" end="86" wasGeneratedBy="56" concept="324" synonym="579"/>
+    <text:NormalizedNamedEntity xmi:id="366" sofa="463" begin="144" end="149" wasGeneratedBy="56" concept="324" synonym="583"/>
+    <text:NormalizedNamedEntity xmi:id="375" sofa="463" begin="312" end="317" wasGeneratedBy="56" concept="324" synonym="587"/>
+    <text:NormalizedNamedEntity xmi:id="384" sofa="463" begin="443" end="448" wasGeneratedBy="56" concept="324" synonym="591"/>
+    <text:NormalizedNamedEntity xmi:id="393" sofa="463" begin="475" end="480" wasGeneratedBy="56" concept="324" synonym="595"/>
+    <text:NormalizedNamedEntity xmi:id="402" sofa="463" begin="572" end="577" wasGeneratedBy="56" concept="330" synonym="599"/>
+    <text:NormalizedNamedEntity xmi:id="411" sofa="463" begin="579" end="584" wasGeneratedBy="56" concept="336" synonym="603"/>
+    <text:NormalizedNamedEntity xmi:id="420" sofa="463" begin="586" end="590" wasGeneratedBy="56" concept="342" synonym="607"/>
+    <text:NormalizedNamedEntity xmi:id="429" sofa="463" begin="738" end="743" wasGeneratedBy="56" concept="324" synonym="611"/>
+    <text:NormalizedNamedEntity xmi:id="438" sofa="463" begin="1166" end="1171" wasGeneratedBy="56" concept="324" synonym="615"/>
+    <text:NormalizedNamedEntity xmi:id="447" sofa="463" begin="1263" end="1268" wasGeneratedBy="56" concept="324" synonym="619"/>
+    <cas:Sofa xmi:id="456" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="Germline RECQL mutations in high risk Chinese breast cancer patients.&#10;&#10;Recently, RECQL was reported as a new breast cancer susceptibility gene. RECQL belongs to the RECQ DNA helicase family which unwinds double strand DNA and involved in the DNA replication stress response, telomere maintenance and DNA repair. RECQL deficient mice cells are prone to spontaneous chromosomal instability and aneuploidy, suggesting a tumor-suppressive role of RECQL in cancer. In this study, RECQL gene mutation screening was performed on 1110 breast cancer patients who were negative for BRCA1, BRCA2, TP53 and PTEN gene mutations and recruited from March 2007 to June 2015 in the Hong Kong Hereditary and High Risk Breast Cancer Program. Four different RECQL pathogenic mutations were identified in six of the 1110 (0.54 %) tested breast cancer patients. The identified mutations include one frame-shift deletion (c.974_977delAAGA), two splicing site mutations (c.394+1G&gt;A, c.867+1G&gt;T) and one nonsense mutation (c.796C&gt;T, p.Gln266Ter). Two of the mutations (c.867+1G&gt;T and p.Gln266Ter) were seen in more than one patients. This study provides the basis for existing of pathogenic RECQL mutations in Southern Chinese breast cancer patients. The significance of rare variants in RECQL gene in the estimation of breast cancer risk warranted further investigation in larger cohort of patients and in other ethnic groups. &#10;&#10;"/>
+    <cas:Sofa xmi:id="463" sofaNum="2" sofaID="DocumentView" mimeType="text" sofaString="Germline RECQL mutations in high risk Chinese breast cancer patients.&#10;&#10;Recently, RECQL was reported as a new breast cancer susceptibility gene. RECQL belongs to the RECQ DNA helicase family which unwinds double strand DNA and involved in the DNA replication stress response, telomere maintenance and DNA repair. RECQL deficient mice cells are prone to spontaneous chromosomal instability and aneuploidy, suggesting a tumor-suppressive role of RECQL in cancer. In this study, RECQL gene mutation screening was performed on 1110 breast cancer patients who were negative for BRCA1, BRCA2, TP53 and PTEN gene mutations and recruited from March 2007 to June 2015 in the Hong Kong Hereditary and High Risk Breast Cancer Program. Four different RECQL pathogenic mutations were identified in six of the 1110 (0.54 %) tested breast cancer patients. The identified mutations include one frame-shift deletion (c.974_977delAAGA), two splicing site mutations (c.394+1G&gt;A, c.867+1G&gt;T) and one nonsense mutation (c.796C&gt;T, p.Gln266Ter). Two of the mutations (c.867+1G&gt;T and p.Gln266Ter) were seen in more than one patients. This study provides the basis for existing of pathogenic RECQL mutations in Southern Chinese breast cancer patients. The significance of rare variants in RECQL gene in the estimation of breast cancer risk warranted further investigation in larger cohort of patients and in other ethnic groups. &#10;&#10;"/>
+    <meta:DateTime xmi:id="470" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:DateTime xmi:id="477" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:DateTime xmi:id="484" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:DateTime xmi:id="491" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:DateTime xmi:id="498" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:DateTime xmi:id="505" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:Person xmi:id="512" surname="Kwong" forename="Ava" affiliation="Department of Surgery, The University of Hong Kong, Queen Mary Hospital, Pokfulam, Hong Kong SAR. akwong@asiabreastregistry.com., Department of Surgery, Hong Kong Sanatorium &amp; Hospital, Happy Valley, Hong Kong SAR. akwong@asiabreastregistry.com., Hong Kong Hereditary Breast Cancer Family Registry, Happy Valley, Hong Kong SAR. akwong@asiabreastregistry.com., Department of Surgery, The University of Hong Kong, Queen Mary Hospital, Pokfulam, Hong Kong SAR., Department of Surgery, The University of Hong Kong, Queen Mary Hospital, Pokfulam, Hong Kong SAR., Department of Surgery, The University of Hong Kong, Queen Mary Hospital, Pokfulam, Hong Kong SAR., Division of Molecular Pathology, Department of Pathology, Hong Kong Sanatorium &amp; Hospital, Happy Valley, Hong Kong SAR., Division of Molecular Pathology, Department of Pathology, Hong Kong Sanatorium &amp; Hospital, Happy Valley, Hong Kong SAR., Hong Kong Hereditary Breast Cancer Family Registry, Happy Valley, Hong Kong SAR., Division of Molecular Pathology, Department of Pathology, Hong Kong Sanatorium &amp; Hospital, Happy Valley, Hong Kong SAR., Hong Kong Hereditary Breast Cancer Family Registry, Happy Valley, Hong Kong SAR., Division of Molecular Pathology, Department of Pathology, Hong Kong Sanatorium &amp; Hospital, Happy Valley, Hong Kong SAR., Women's College Research Institute, Women's College Hospital, Toronto, Canada., Dalla Lan School of Public Health, University of Toronto, Toronto, Canada., Women's College Research Institute, Women's College Hospital, Toronto, Canada., Dalla Lan School of Public Health, University of Toronto, Toronto, Canada."/>
+    <meta:Person xmi:id="517" surname="Shin" forename="Vivian Y"/>
+    <meta:Person xmi:id="522" surname="Cheuk" forename="Isabella W Y"/>
+    <meta:Person xmi:id="527" surname="Chen" forename="Jiawei"/>
+    <meta:Person xmi:id="532" surname="Au" forename="Chun H"/>
+    <meta:Person xmi:id="537" surname="Ho" forename="Dona N"/>
+    <meta:Person xmi:id="542" surname="Chan" forename="Tsun L"/>
+    <meta:Person xmi:id="547" surname="Ma" forename="Edmond S K"/>
+    <meta:Person xmi:id="552" surname="Akbari" forename="Mohammad R"/>
+    <meta:Person xmi:id="557" surname="Narod" forename="Steven A"/>
+    <meta:Date xmi:id="562" day="0" month="6" year="2016"/>
+    <meta:Concept xmi:id="566" prefLabel="572" identifier="27125668" identifierSource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+    <meta:Label xmi:id="572" value="PMID:27125668"/>
+    <meta:Synonym xmi:id="575" synonymText="recql" weight="0.0"/>
+    <meta:Synonym xmi:id="579" synonymText="recql" weight="0.0"/>
+    <meta:Synonym xmi:id="583" synonymText="recql" weight="0.0"/>
+    <meta:Synonym xmi:id="587" synonymText="recql" weight="0.0"/>
+    <meta:Synonym xmi:id="591" synonymText="recql" weight="0.0"/>
+    <meta:Synonym xmi:id="595" synonymText="recql" weight="0.0"/>
+    <meta:Synonym xmi:id="599" synonymText="brca1" weight="0.0"/>
+    <meta:Synonym xmi:id="603" synonymText="brca2" weight="0.0"/>
+    <meta:Synonym xmi:id="607" synonymText="tp53" weight="0.0"/>
+    <meta:Synonym xmi:id="611" synonymText="recql" weight="0.0"/>
+    <meta:Synonym xmi:id="615" synonymText="recql" weight="0.0"/>
+    <meta:Synonym xmi:id="619" synonymText="recql" weight="0.0"/>
+    <cas:View sofa="456" members="1 6 11 13 15 32 56 70 75 80 85 90 95 100 105 110 115 120 125 130 135 140 145 150 155 160 165 170 175 180 185 190 195 200 205 210 215 220 245 249 253 257 261 265"/>
+    <cas:View sofa="463" members="279 284 290 298 304 312 315 318 321 324 330 336 342 348 357 366 375 384 393 402 411 420 429 438 447"/>
+</xmi:XMI>

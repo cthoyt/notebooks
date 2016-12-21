@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:provenance="http:///de/fraunhofer/scai/bio/extraction/types/meta/provenance.ecore" xmlns:cas="http:///uima/cas.ecore" xmlns:xmi="http://www.omg.org/XMI" xmlns:meta2="http:///de/fraunhofer/scai/bio/extraction/types/text/documentelement/meta.ecore" xmlns:meta="http:///de/fraunhofer/scai/bio/extraction/types/meta.ecore" xmlns:tcas="http:///uima/tcas.ecore" xmlns:container="http:///de/fraunhofer/scai/bio/extraction/types/text/documentelement/container.ecore" xmlns:text="http:///de/fraunhofer/scai/bio/extraction/types/text.ecore" xmlns:structure="http:///de/fraunhofer/scai/bio/extraction/types/text/documentelement/structure.ecore" xmlns:image="http:///de/fraunhofer/scai/bio/extraction/types/image.ecore" xmlns:documentelement="http:///de/fraunhofer/scai/bio/extraction/types/text/documentelement.ecore" xmi:version="2.0">
+    <cas:NULL xmi:id="0"/>
+    <meta:Person xmi:id="1" surname="uimahpc"/>
+    <meta:Person xmi:id="6" surname="marc"/>
+    <provenance:AgentProvenance xmi:id="11" user="1"/>
+    <provenance:AgentProvenance xmi:id="13" user="6"/>
+    <provenance:ActivityProvenance xmi:id="15" componentId="de.fraunhofer.scai.bio.uima.core.reader.XCasMessageReader" startedAtTime="678" endedAtTime="685" version="7.2-20161003210158-7300-5" parameters="120 145 205 90 210 190 100 105" wasAssociatedWith="11"/>
+    <provenance:ActivityProvenance xmi:id="32" componentId="de.fraunhofer.scai.bio.uima.SCAIView2XCAS.reader.SCAIView2XCASReader" startedAtTime="692" endedAtTime="699" version="7.5-SNAPSHOT-20161201231557-7460-10" parameters="140 185 150 155 70 200 175 170 125 110 80 95 160 135 115" wasAssociatedWith="13"/>
+    <provenance:ActivityProvenance xmi:id="56" componentId="de.fraunhofer.scai.bio.uima.prominer.annotator.ProMiner" startedAtTime="706" endedAtTime="713" version="7.2-20161003210158-7300-5" parameters="130 165 180 85 195" wasAssociatedWith="11"/>
+    <meta:Parameter xmi:id="70" key="name" value="SCAIViewWebService" wasGeneratedBy="32" hash="e4dc5df1b61c0887215e90471cec2b15"/>
+    <meta:Parameter xmi:id="75" key="inputString" value="" wasGeneratedBy="32"/>
+    <meta:Parameter xmi:id="80" key="event" value="notSet" wasGeneratedBy="32" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="85" key="annotationMode" value="false" wasGeneratedBy="56" hash="68934a3e9455fa72420237eb05902327"/>
+    <meta:Parameter xmi:id="90" key="jmsTool" value="ProMinerDeployer (7.2)" wasGeneratedBy="15" hash="1272bebab2743a412c9e2f6ad7e33f74"/>
+    <meta:Parameter xmi:id="95" key="namespace" value="http://scaiview.bio.scai.fraunhofer.de/" wasGeneratedBy="32" hash="7cb6fab1c93ae414bfc964f0fbbaf4b1"/>
+    <meta:Parameter xmi:id="100" key="recipients" value="notSet" wasGeneratedBy="15" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="105" key="event" value="notSet" wasGeneratedBy="15" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="110" key="limit" value="10" wasGeneratedBy="32" hash="d3d9446802a44259755d38e6d163e820"/>
+    <meta:Parameter xmi:id="115" key="QueryFile" value="etc/query" wasGeneratedBy="32" hash="7a63a8c9a952c271a60d8d9d6d0dc6d6"/>
+    <meta:Parameter xmi:id="120" key="jmsBroker" value="notSet" wasGeneratedBy="15" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="125" key="username" value="notSet" wasGeneratedBy="32" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="130" key="resourceBaseFolder" value="/data/home/uimahpc/RELEASE/7.2/scaleout/../models/ProMinerNER" wasGeneratedBy="56" hash="1c6b13078793acd00b88f076190d4d7a"/>
+    <meta:Parameter xmi:id="135" key="offset" value="25000" wasGeneratedBy="32" hash="70f44538106c52ad2a01ffba924792e2"/>
+    <meta:Parameter xmi:id="140" key="Query" value="[PMID:&quot;27318168&quot;] OR [PMID:&quot;27125668&quot;] OR [PMID:&quot;26427657&quot;]" wasGeneratedBy="32" hash="4e42b421edc12f44d704d32abb92551a"/>
+    <meta:Parameter xmi:id="145" key="jmsIni" value="/data/home/uimahpc/RELEASE/7.2/scaleout/microservices/etc/jms-extern.ini" wasGeneratedBy="15" hash="3445b625ed3402b1f0ee1368b2fa8728"/>
+    <meta:Parameter xmi:id="150" key="documentCollectionName" value="MZ_9ea5d622-370c-482f-ba3b-9ba89d3c3c75" wasGeneratedBy="32" hash="d9d243c701f0d9f535e68f98920f53be"/>
+    <meta:Parameter xmi:id="155" key="connection" value="http://academia.scaiview.com/academia/" wasGeneratedBy="32" hash="f768b69b835dcf03221a64c4d6fb212d"/>
+    <meta:Parameter xmi:id="160" key="trackingNr" value="notSet" wasGeneratedBy="32" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="165" key="resourceFolder" value="Homo_sapiens_ns_mapped" wasGeneratedBy="56" hash="d8c0e5f8d803b5efc59275324598f876"/>
+    <meta:Parameter xmi:id="170" key="jmsQueue" value="ProMinerNER.Homo_sapiens_ns_mapped,interfacer.xmi.222df7bc-eda0-43ae-804c-60c2265c4640," wasGeneratedBy="32" hash="4a6130f941359b35625b16ff15b9ece4"/>
+    <meta:Parameter xmi:id="175" key="recipients" value="ProMinerNER.Homo_sapiens_ns_mapped,interfacer.xmi.222df7bc-eda0-43ae-804c-60c2265c4640," wasGeneratedBy="32" hash="4a6130f941359b35625b16ff15b9ece4"/>
+    <meta:Parameter xmi:id="180" key="workingView" value="DocumentView" wasGeneratedBy="56" hash="381a68e618f574166c8ec9eb2b110f73"/>
+    <meta:Parameter xmi:id="185" key="license" value="MDAzMGxvY2F0aW9uIHd3dy5zY2FpLmZyYXVuaG9mZXIuZGUvbXppbW1lcm1hbm4KMDAxY2lkZW50aWZpZXIgdGVzdCBsaWNlbnNlCjAwMjBjaWQgdGltZSA8IDIwNDItMDEtMDFUMDA6MDAKMDAyZnNpZ25hdHVyZSAJPOFDaQbvzzfyMuZOWHaYgFxTnpiSu3K6JZ1ys7Vp1go" wasGeneratedBy="32" hash="defe4cc6e97a767cec84871f9c2eecd6"/>
+    <meta:Parameter xmi:id="190" key="license" value="notSet" wasGeneratedBy="15" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="195" key="annotationDeduplication" value="false" wasGeneratedBy="56" hash="68934a3e9455fa72420237eb05902327"/>
+    <meta:Parameter xmi:id="200" key="password" value="notSet" wasGeneratedBy="32" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <meta:Parameter xmi:id="205" key="jmsQueue" value="ProMinerNER.Homo_sapiens_ns_mapped" wasGeneratedBy="15" hash="3b65aea24401ccd7d33fb9ef6707b853"/>
+    <meta:Parameter xmi:id="210" key="documentCollectionName" value="notSet" wasGeneratedBy="15" hash="ee2caef32d0568a263e5049282bd0fbf"/>
+    <tcas:DocumentAnnotation xmi:id="215" sofa="664" begin="0" end="1731" language="x-unspecified"/>
+    <meta:Header xmi:id="220" sofa="664" begin="0" end="0" source="Breast (Edinburgh, Scotland)" title="Women at high risk of breast cancer: Molecular characteristics, clinical presentation and management." authors="720 725" publicationDate="730" ISSN="" documentConcept="734"/>
+    <meta:KeyValue xmi:id="237" key="entityProvenance.documentURI" value="file:/home/marc/workspace-mars/TheInterfacer/27318168"/>
+    <meta:KeyValue xmi:id="241" key="license" value="MDAzMGxvY2F0aW9uIHd3dy5zY2FpLmZyYXVuaG9mZXIuZGUvbXppbW1lcm1hbm4KMDAxY2lkZW50aWZpZXIgdGVzdCBsaWNlbnNlCjAwMjBjaWQgdGltZSA8IDIwNDItMDEtMDFUMDA6MDAKMDAyZnNpZ25hdHVyZSAJPOFDaQbvzzfyMuZOWHaYgFxTnpiSu3K6JZ1ys7Vp1go"/>
+    <meta:KeyValue xmi:id="245" key="tracking-nr" value="MZ_9ea5d622-370c-482f-ba3b-9ba89d3c3c75"/>
+    <meta:KeyValue xmi:id="249" key="event" value="ANNOTATION"/>
+    <meta:KeyValue xmi:id="253" key="unit" value="21 [NNE],21 [Homo_sapiens_ns_mapped]"/>
+    <provenance:EntityProvenance xmi:id="257" documentID="a3d92daa975e892d172b65f8af60fb459827ac9ae3cc0bfd5d912fe7e47e5165" userSuppliedID="27318168" wasDerivedFrom="http://academia.scaiview.com/academia/" workflowProvenance="32 15 56" wasGeneratedBy="32" wasAttributedTo="13" documentCollectionName="MZ_9ea5d622-370c-482f-ba3b-9ba89d3c3c75"/>
+    <tcas:DocumentAnnotation xmi:id="271" sofa="671" begin="0" end="1731" language="x-unspecified"/>
+    <container:FrontMatter xmi:id="276" sofa="671" begin="0" end="1731" wasGeneratedBy="32"/>
+    <meta2:DocumentTitle xmi:id="282" sofa="671" begin="0" end="101" wasGeneratedBy="32"/>
+    <meta2:Abstract xmi:id="290" sofa="671" begin="103" end="1729" wasGeneratedBy="32"/>
+    <structure:List xmi:id="296" sofa="671" begin="0" end="1731" wasGeneratedBy="32" rhetorical="KEYWORDS"/>
+    <meta:Label xmi:id="304" languageTag="en" value="BRCA1"/>
+    <meta:Label xmi:id="307" languageTag="en" value="BRCA2"/>
+    <meta:Label xmi:id="310" languageTag="en" value="BRIP1"/>
+    <meta:Label xmi:id="313" languageTag="en" value="CDH1"/>
+    <meta:Label xmi:id="316" languageTag="en" value="CHEK2"/>
+    <meta:Label xmi:id="319" languageTag="en" value="FANCA"/>
+    <meta:Label xmi:id="322" languageTag="en" value="FANCC"/>
+    <meta:Label xmi:id="325" languageTag="en" value="FANCM"/>
+    <meta:Label xmi:id="328" languageTag="en" value="MRE11A"/>
+    <meta:Label xmi:id="331" languageTag="en" value="NLRP2"/>
+    <meta:Label xmi:id="334" languageTag="en" value="PALB2"/>
+    <meta:Label xmi:id="337" languageTag="en" value="RAD50"/>
+    <meta:Label xmi:id="340" languageTag="en" value="RAD51"/>
+    <meta:Label xmi:id="343" languageTag="en" value="RAD51B"/>
+    <meta:Label xmi:id="346" languageTag="en" value="RAD51C"/>
+    <meta:Label xmi:id="349" languageTag="en" value="RAD51D"/>
+    <meta:Label xmi:id="352" languageTag="en" value="STK11"/>
+    <meta:Label xmi:id="355" languageTag="en" value="TP53"/>
+    <meta:Label xmi:id="358" languageTag="en" value="XRCC2"/>
+    <meta:Concept xmi:id="361" prefLabel="337" identifier="HS039507" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="367" prefLabel="316" identifier="HS040386" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="373" prefLabel="319" identifier="HS043219" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="379" prefLabel="322" identifier="HS043220" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="385" prefLabel="328" identifier="HS048058" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="391" prefLabel="331" identifier="HS050380" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="397" prefLabel="325" identifier="HS051332" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="403" prefLabel="340" identifier="HS051526" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="409" prefLabel="346" identifier="HS051527" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="415" prefLabel="343" identifier="HS051528" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="421" prefLabel="349" identifier="HS051530" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="427" prefLabel="304" identifier="HS052746" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="433" prefLabel="307" identifier="HS052772" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="439" prefLabel="352" identifier="HS052813" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="445" prefLabel="355" identifier="HS053098" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="451" prefLabel="358" identifier="HS053409" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="457" prefLabel="334" identifier="HS053919" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="463" prefLabel="310" identifier="HS054791" identifierSource="Homo_sapiens_ns_mapped"/>
+    <meta:Concept xmi:id="469" prefLabel="313" identifier="HS056970" identifierSource="Homo_sapiens_ns_mapped"/>
+    <text:NormalizedNamedEntity xmi:id="475" sofa="671" begin="544" end="549" wasGeneratedBy="56" concept="427" synonym="743"/>
+    <text:NormalizedNamedEntity xmi:id="484" sofa="671" begin="554" end="559" wasGeneratedBy="56" concept="433" synonym="747"/>
+    <text:NormalizedNamedEntity xmi:id="493" sofa="671" begin="590" end="594" wasGeneratedBy="56" concept="445" synonym="751"/>
+    <text:NormalizedNamedEntity xmi:id="502" sofa="671" begin="596" end="601" wasGeneratedBy="56" concept="439" synonym="755"/>
+    <text:NormalizedNamedEntity xmi:id="511" sofa="671" begin="602" end="606" wasGeneratedBy="56" concept="439" synonym="759"/>
+    <text:NormalizedNamedEntity xmi:id="520" sofa="671" begin="608" end="612" wasGeneratedBy="56" concept="469" synonym="763"/>
+    <text:NormalizedNamedEntity xmi:id="529" sofa="671" begin="614" end="619" wasGeneratedBy="56" concept="457" synonym="767"/>
+    <text:NormalizedNamedEntity xmi:id="538" sofa="671" begin="621" end="626" wasGeneratedBy="56" concept="367" synonym="771"/>
+    <text:NormalizedNamedEntity xmi:id="547" sofa="671" begin="633" end="638" wasGeneratedBy="56" concept="385" synonym="775"/>
+    <text:NormalizedNamedEntity xmi:id="556" sofa="671" begin="640" end="645" wasGeneratedBy="56" concept="361" synonym="779"/>
+    <text:NormalizedNamedEntity xmi:id="565" sofa="671" begin="647" end="651" wasGeneratedBy="56" concept="391" synonym="783"/>
+    <text:NormalizedNamedEntity xmi:id="574" sofa="671" begin="653" end="658" wasGeneratedBy="56" concept="463" synonym="787"/>
+    <text:NormalizedNamedEntity xmi:id="583" sofa="671" begin="660" end="665" wasGeneratedBy="56" concept="373" synonym="791"/>
+    <text:NormalizedNamedEntity xmi:id="592" sofa="671" begin="667" end="672" wasGeneratedBy="56" concept="379" synonym="795"/>
+    <text:NormalizedNamedEntity xmi:id="601" sofa="671" begin="674" end="679" wasGeneratedBy="56" concept="397" synonym="799"/>
+    <text:NormalizedNamedEntity xmi:id="610" sofa="671" begin="681" end="686" wasGeneratedBy="56" concept="403" synonym="803"/>
+    <text:NormalizedNamedEntity xmi:id="619" sofa="671" begin="688" end="694" wasGeneratedBy="56" concept="415" synonym="807"/>
+    <text:NormalizedNamedEntity xmi:id="628" sofa="671" begin="696" end="702" wasGeneratedBy="56" concept="409" synonym="811"/>
+    <text:NormalizedNamedEntity xmi:id="637" sofa="671" begin="704" end="710" wasGeneratedBy="56" concept="421" synonym="815"/>
+    <text:NormalizedNamedEntity xmi:id="646" sofa="671" begin="716" end="721" wasGeneratedBy="56" concept="451" synonym="819"/>
+    <text:NormalizedNamedEntity xmi:id="655" sofa="671" begin="1269" end="1274" wasGeneratedBy="56" concept="427" synonym="823"/>
+    <cas:Sofa xmi:id="664" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="Women at high risk of breast cancer: Molecular characteristics, clinical presentation and management.&#10;&#10;The presence of breast cancer in any first-degree female relative in general nearly doubles the risk for a proband and the risk gradually increases with the number of affected relatives. Current advances in molecular oncology and oncogenetics may enable the identification of high-risk individuals with breast-cancer predisposition. The best-known forms of hereditary breast cancer (HBC) are caused by mutations in the high-penetrance genes BRCA1 and BRCA2. Other genes, including PTEN, TP53, STK11/LKB1, CDH1, PALB2, CHEK2, ATM, MRE11, RAD50, NBS1, BRIP1, FANCA, FANCC, FANCM, RAD51, RAD51B, RAD51C, RAD51D, and XRCC2 have been described as high- or moderate-penetrance breast cancer-susceptibility genes. The majority of breast cancer-susceptibility genes code for tumor suppressor proteins that are involved in critical processes of DNA repair pathways. This is of particular importance for those women who, due to their increased risk of breast cancer, may be subjected to more frequent screening but due to their repair deficiency might be at the risk of developing radiation-induced malignancies. It has been proven that cancers arising from the most frequent BRCA1 gene mutation carriers differ significantly from the sporadic disease of age-matched controls in their histopathological appearances and molecular characteristics. The increased depth of mutation detection brought by next-generation sequencing and a better understanding of the mechanisms through which these mutations cause the disease will bring novel insights in terms of oncological prevention, diagnostics, and therapeutic options for HBC patients. &#10;&#10;"/>
+    <cas:Sofa xmi:id="671" sofaNum="2" sofaID="DocumentView" mimeType="text" sofaString="Women at high risk of breast cancer: Molecular characteristics, clinical presentation and management.&#10;&#10;The presence of breast cancer in any first-degree female relative in general nearly doubles the risk for a proband and the risk gradually increases with the number of affected relatives. Current advances in molecular oncology and oncogenetics may enable the identification of high-risk individuals with breast-cancer predisposition. The best-known forms of hereditary breast cancer (HBC) are caused by mutations in the high-penetrance genes BRCA1 and BRCA2. Other genes, including PTEN, TP53, STK11/LKB1, CDH1, PALB2, CHEK2, ATM, MRE11, RAD50, NBS1, BRIP1, FANCA, FANCC, FANCM, RAD51, RAD51B, RAD51C, RAD51D, and XRCC2 have been described as high- or moderate-penetrance breast cancer-susceptibility genes. The majority of breast cancer-susceptibility genes code for tumor suppressor proteins that are involved in critical processes of DNA repair pathways. This is of particular importance for those women who, due to their increased risk of breast cancer, may be subjected to more frequent screening but due to their repair deficiency might be at the risk of developing radiation-induced malignancies. It has been proven that cancers arising from the most frequent BRCA1 gene mutation carriers differ significantly from the sporadic disease of age-matched controls in their histopathological appearances and molecular characteristics. The increased depth of mutation detection brought by next-generation sequencing and a better understanding of the mechanisms through which these mutations cause the disease will bring novel insights in terms of oncological prevention, diagnostics, and therapeutic options for HBC patients. &#10;&#10;"/>
+    <meta:DateTime xmi:id="678" day="6" month="12" year="2016" hour="11" minute="38" second="32"/>
+    <meta:DateTime xmi:id="685" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:DateTime xmi:id="692" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:DateTime xmi:id="699" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:DateTime xmi:id="706" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:DateTime xmi:id="713" day="6" month="12" year="2016" hour="11" minute="39" second="26"/>
+    <meta:Person xmi:id="720" surname="Kleibl" forename="Zdenek" affiliation="Institute of Biochemistry and Experimental Oncology, First Faculty of Medicine, Charles University in Prague, Prague, Czech Republic. Electronic address: zdekleje@lf1.cuni.cz., Department of Cancer Genetics, Institute for Cancer Research, Oslo University Hospital, Radiumhospitalet, Oslo, Norway; K.G. Jebsen Center for Breast Cancer Research, Institute of Clinical Medicine, Faculty of Medicine, University of Oslo, Oslo, Norway; Department of Clinical Molecular Biology (EpiGen), Akershus University Hospital, University of Oslo (UiO), Oslo, Norway. Electronic address: v.n.kristensen@medisin.uio.no."/>
+    <meta:Person xmi:id="725" surname="Kristensen" forename="Vessela N"/>
+    <meta:Date xmi:id="730" day="0" month="8" year="2016"/>
+    <meta:Concept xmi:id="734" prefLabel="740" identifier="27318168" identifierSource="http://www.ncbi.nlm.nih.gov/pubmed/"/>
+    <meta:Label xmi:id="740" value="PMID:27318168"/>
+    <meta:Synonym xmi:id="743" synonymText="brca1" weight="0.0"/>
+    <meta:Synonym xmi:id="747" synonymText="brca2" weight="0.0"/>
+    <meta:Synonym xmi:id="751" synonymText="tp53" weight="0.0"/>
+    <meta:Synonym xmi:id="755" synonymText="stk11" weight="0.0"/>
+    <meta:Synonym xmi:id="759" synonymText="lkb1" weight="0.0"/>
+    <meta:Synonym xmi:id="763" synonymText="cdh1" weight="0.0"/>
+    <meta:Synonym xmi:id="767" synonymText="palb2" weight="0.0"/>
+    <meta:Synonym xmi:id="771" synonymText="chek2" weight="0.0"/>
+    <meta:Synonym xmi:id="775" synonymText="mre11" weight="0.0"/>
+    <meta:Synonym xmi:id="779" synonymText="rad50" weight="0.0"/>
+    <meta:Synonym xmi:id="783" synonymText="nbs1" weight="0.0"/>
+    <meta:Synonym xmi:id="787" synonymText="brip1" weight="0.0"/>
+    <meta:Synonym xmi:id="791" synonymText="fanca" weight="0.0"/>
+    <meta:Synonym xmi:id="795" synonymText="fancc" weight="0.0"/>
+    <meta:Synonym xmi:id="799" synonymText="fancm" weight="0.0"/>
+    <meta:Synonym xmi:id="803" synonymText="rad51" weight="0.0"/>
+    <meta:Synonym xmi:id="807" synonymText="rad51b" weight="0.0"/>
+    <meta:Synonym xmi:id="811" synonymText="rad51c" weight="0.0"/>
+    <meta:Synonym xmi:id="815" synonymText="rad51d" weight="0.0"/>
+    <meta:Synonym xmi:id="819" synonymText="xrcc2" weight="0.0"/>
+    <meta:Synonym xmi:id="823" synonymText="brca1" weight="0.0"/>
+    <cas:View sofa="664" members="1 6 11 13 15 32 56 70 75 80 85 90 95 100 105 110 115 120 125 130 135 140 145 150 155 160 165 170 175 180 185 190 195 200 205 210 215 220 237 241 245 249 253 257"/>
+    <cas:View sofa="671" members="271 276 282 290 296 304 307 310 313 316 319 322 325 328 331 334 337 340 343 346 349 352 355 358 361 367 373 379 385 391 397 403 409 415 421 427 433 439 445 451 457 463 469 475 484 493 502 511 520 529 538 547 556 565 574 583 592 601 610 619 628 637 646 655"/>
+</xmi:XMI>
