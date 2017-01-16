@@ -16,3 +16,4 @@ This folder contains the work I've done at University of Bonn, including all of 
 | pl2  | Programming Lab II                  |
 | pl3  | Programming Lab III                 |
 | sbi  | Structural Bioinformatics           |
+| smge | Statistical Methods in Genetic Epidemiology |
