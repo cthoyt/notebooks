@@ -7,6 +7,7 @@ This folder contains the work I've done at University of Bonn, including all of 
 | abi  | Algorithmic Bioinformatics II       |
 | bi1  | Bioinformatics I                    |
 | bi2  | Bioinformatics II                   |
+| cis  | Chemoinformatics Seminar            |
 | hca  | High Content Analysis Lab           |
 | isb  | Industrial Systems Biology Lab      |
 | lskd | Life Sciences Knowledge Discovery   |
