@@ -11,3 +11,5 @@ bit/ms/circadian_clock
 bit/ms/t12opt/*
 
 Scratch.ipynb
+reach_output.json
+trips_output.xml
